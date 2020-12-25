@@ -1,4 +1,4 @@
-## Welcome to XY Digital Studio
+## Welcome to Foca
 
 You can use the [editor on GitHub](https://github.com/yating-900/yating-900.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
