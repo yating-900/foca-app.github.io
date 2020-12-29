@@ -267,7 +267,7 @@ p {
   margin-top: auto;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 0px;
+  padding-top: 10px;
   padding-right: 60px;
   padding-left: 60px;
   -webkit-box-align: center;
@@ -551,8 +551,8 @@ p {
 }
 
 .curved-bg-top.light-top {
-  z-index: 1;
-  width: 105vw;
+  z-index: 0;
+  width: 100vw;
   height: 130px;
   margin-top: 0px;
   padding-top: 0px;
@@ -560,15 +560,10 @@ p {
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-transition: left 275ms ease;
-  transition: left 275ms ease;
 }
 
 .curved-bg-top.light-top:hover {
   width: 105vw;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
 }
 
 .curved-bg-top.light-top:active {
@@ -616,7 +611,17 @@ p {
 }
 
 .curved-bg-wrap {
-  position: relative;
+  position: static;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 25%;
+  z-index: -1;
+  width: 100vw;
+  height: 100px;
+  background-image: url('../images/mybg2.svg');
+  background-position: 0px 0px;
+  background-size: cover;
 }
 
 .curved-bg-wrap.overlap-top {
@@ -1108,9 +1113,10 @@ p {
 
 .footer {
   position: relative;
+  z-index: 1;
   padding-bottom: 0px;
   background-color: #333;
-  color: #fff;
+  color: #333;
 }
 
 .footer.education {
@@ -1133,6 +1139,14 @@ p {
 .footer.fitness {
   padding-top: 60px;
   background-color: #6160e1;
+}
+
+.footer.home {
+  position: relative;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
 }
 
 .footer-col {
@@ -1225,7 +1239,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-bottom: 30px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -1281,6 +1295,10 @@ p {
 .footer-overlap-wrap.only.new {
   position: absolute;
   top: auto;
+}
+
+.footer-overlap-wrap.only.new.uni {
+  position: static;
 }
 
 .footer-contact-info {
