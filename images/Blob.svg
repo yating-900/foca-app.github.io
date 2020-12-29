@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="904" height="899" viewBox="0 0 904 899">
+  <defs>
+    <clipPath id="clip-Blob">
+      <rect width="904" height="899"/>
+    </clipPath>
+  </defs>
+  <g id="Blob" clip-path="url(#clip-Blob)">
+    <path id="Path_4" data-name="Path 4" d="M324.965,0c176.285,0,412.6,200.126,412.6,483.453S431.789,997,255.5,997-10.018,884.156-10.018,600.828,148.68,0,324.965,0Z" transform="matrix(0.839, 0.545, -0.545, 0.839, 455.901, -141.382)" fill="#fc464e"/>
+  </g>
+</svg>
