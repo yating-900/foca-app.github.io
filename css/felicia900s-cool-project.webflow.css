@@ -1033,6 +1033,7 @@ p {
 }
 
 .legal {
+  color: #e2e2e2;
   font-size: 13px;
   letter-spacing: 1px;
 }
@@ -1051,7 +1052,7 @@ p {
 
 .footer-link.light {
   opacity: 0.8;
-  color: #cacaca;
+  color: #e2e2e2;
   text-transform: none;
 }
 
@@ -3739,11 +3740,19 @@ p {
   }
 
   .legal {
-    padding-bottom: 0px;
+    padding-bottom: 10px;
+  }
+
+  .footer-link.light {
+    margin-bottom: 10px;
   }
 
   .footer-flex-wrap.first {
     padding-top: 0px;
+  }
+
+  .footer-bottom-wrap {
+    margin-bottom: 20px;
   }
 
   .footer-overlap-wrap.only.new {
