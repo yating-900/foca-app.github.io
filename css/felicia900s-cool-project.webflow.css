@@ -622,7 +622,7 @@ a {
   bottom: 25%;
   z-index: -1;
   width: 100vw;
-  height: 100px;
+  height: 80px;
   background-image: url('../images/mybg2.svg');
   background-position: 0px 0px;
   background-size: cover;
@@ -1300,7 +1300,7 @@ a {
 .footer-overlap-wrap.only.new {
   position: absolute;
   top: auto;
-  z-index: -4;
+  z-index: 0;
 }
 
 .footer-overlap-wrap.only.new.uni {
