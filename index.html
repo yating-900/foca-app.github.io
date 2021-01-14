@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Dec 31 2020 21:38:25 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Jan 14 2021 23:16:32 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5feb76e0d24a03ef1dc96132" data-wf-site="5feafddcfdc9586136abef4c">
 <head>
   <meta charset="utf-8">
@@ -22,44 +22,150 @@
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+}
+.spinner > div {
+  background-color: #a9a9a9;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+</style>
 </head>
-<body class="body">
+<body class="body home">
+  <div data-ix="preloader-fade-out" class="preloader">
+    <div class="w-embed">
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+  </div>
   <div class="page-container home">
-    <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar home w-nav">
-      <div class="nav-container">
+    <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar-2 w-nav">
+      <div class="nav-container-2">
         <a href="index.html" aria-current="page" class="nav-logo-wrap w-nav-brand w--current"><img src="images/logo-foca.svg" alt="" class="nav-logo"></a>
-        <div class="nav-right-wrap">
-          <nav role="navigation" class="nav-menu w-nav-menu">
-            <a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">HOME</a>
-            <a href="about.html" class="nav-link w-nav-link">ABOUT</a>
-            <a href="faq.html" class="nav-link w-nav-link">FAQ</a>
+        <div class="nav-right-wrap-2">
+          <nav role="navigation" class="nav-menu-2 w-nav-menu">
+            <a href="about.html" class="nav-link-4 w-nav-link">ABOUT</a>
+            <a href="faq.html" class="nav-link-4 w-nav-link">FAQ</a>
+            <a href="mailto:foca-2020@outloook.com" class="nav-link-4 w-nav-link">CONTACT</a>
           </nav>
-          <div class="menu-button w-nav-button">
-            <div class="icon w-icon-nav-menu"></div>
+          <div class="menu-button-2 w-nav-button">
+            <div class="icon-5 w-icon-nav-menu"></div>
           </div>
         </div>
       </div>
     </div>
     <div class="hero-section main">
-      <div class="container">
+      <div class="container main">
         <div class="_2-col-grid">
           <div id="w-node-900a56e1bde3-1dc96132" class="hero-content">
             <div class="rich-text-block-2 w-richtext">
-              <h1>Foca: Pomodoro </h1>
+              <h1>Foca - Pomodoro </h1>
               <h1>Focus Timer</h1>
             </div>
             <h1 class="hero-title"> </h1>
-            <p class="section-p">Foca helps you cultivate productive and healthy work habits</p>
-            <a href="https://apps.apple.com/de/app/foca-pomodoro-stretch/id1526204217?l=en" target="_blank" class="link-block w-inline-block"><img src="images/Frame-32.svg" loading="lazy" alt="" class="image"></a>
-            <a href="https://play.google.com/store/apps/details?id=com.pomodoro.foca&amp;hl=en_US&amp;gl=US" target="_blank" class="link-block w-inline-block"><img src="images/Frame-33.svg" loading="lazy" alt="" class="image"></a>
+            <p class="section-p _2">Combining the Pomodoro technique with stretch exercises, Foca aims to keep you productive and healthy at work.<br></p>
+            <a href="https://apps.apple.com/de/app/foca-pomodoro-stretch/id1526204217?l=en" target="_blank" class="link-block w-inline-block"><img src="https://uploads-ssl.webflow.com/5feafddcfdc9586136abef4c/6000d06629f7027a9857e751_app%20store.svg" loading="lazy" alt="" class="image"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.pomodoro.foca&amp;hl=en_US&amp;gl=US" target="_blank" class="link-block w-inline-block"><img src="https://uploads-ssl.webflow.com/5feafddcfdc9586136abef4c/6000d050c24b342555ad554c_google%20play.svg" loading="lazy" alt="" class="image"></a>
           </div>
-          <div id="w-node-124f0f8a5249-1dc96132" class="div-block-4"><img src="images/mmmfoca.gif" loading="lazy" alt="" class="image-5">
-            <div class="div-block-5"></div>
+          <div id="w-node-3a5c522425b5-1dc96132">
+            <div class="div-block-11"><img src="images/mmmfoca.gif" loading="lazy" alt="" class="image-7">
+              <div class="div-block-10"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer-overlap-wrap only new div-block-7">
+    <div class="hero-section sub right">
+      <div class="container">
+        <div class="_2-col-grid">
+          <div id="w-node-7c375c707125-1dc96132"><img src="images/Stretch_1.png" loading="lazy" sizes="100vw" srcset="images/Stretch_1-p-500.png 500w, images/Stretch_1.png 751w" alt="" class="image-7"></div>
+          <div id="w-node-7c375c707126-1dc96132" class="div-block-9">
+            <h3 class="heading-3">Immersive Concentration</h3>
+            <h4 class="heading-4">Various ambient sound </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-section review">
+      <div class="container user-review">
+        <h4 class="heading-5">Users Love Foca</h4>
+        <div data-delay="4000" data-animation="slide" data-autoplay="1" data-duration="500" data-infinite="1" class="slider w-slider">
+          <div class="mask w-slider-mask">
+            <div class="slide w-slide">
+              <div class="div-block-8">
+                <div class="text-block">&quot; The best app to boost up productivity. I haven&#x27;t seen such a simple and aesthetic app until now. After struggling a lot to find such apps, finally I found this, and now I&#x27;m happy. I liked the idea of adding a short exercise tutor as a mood refreshment. Really!! Great job creators!🌻🌻 &quot;</div>
+              </div>
+            </div>
+            <div class="w-slide">
+              <div class="div-block-8">
+                <div class="text-block">&quot; Very useful app, intuitive interface, nothing unnecessary, only what you need is to work productively. One of the best app in the category. &quot;</div>
+              </div>
+            </div>
+            <div class="w-slide">
+              <div class="div-block-8">
+                <div class="text-block">&quot; Woow blessed be the day I found this amazing app finally! Blessed be the mind that created the app! From now on I don&#x27;t have reason to commit procrastination! &quot;</div>
+              </div>
+            </div>
+          </div>
+          <div class="left-arrow w-slider-arrow-left">
+            <div class="icon-3 w-icon-slider-left"></div>
+          </div>
+          <div class="right-arrow w-slider-arrow-right">
+            <div class="icon-4 w-icon-slider-right"></div>
+          </div>
+          <div class="slide-nav-2 w-slider-nav w-round"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-section callout">
+      <div class="container callout">
+        <h4>Get Foca and boost your productivity</h4>
+      </div>
+    </div>
+    <div class="footer-overlap-wrap only new div-block-7 uni">
       <div class="curved-bg-wrap"></div>
       <div class="footer home">
         <div class="container">
@@ -67,7 +173,6 @@
             <div class="footer-flex-wrap first">
               <a href="terms-of-use.html" class="footer-link light">Terms of Use</a>
               <a href="privacy-policy.html" class="footer-link light">Privacy Policy</a>
-              <a href="mailto:foca-2020@outlook.com" class="footer-link light">Contact Us</a>
             </div>
             <div class="legal">© 2021 All right reserved.</div>
           </div>
