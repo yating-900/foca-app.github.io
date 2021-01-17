@@ -17541,30 +17541,30 @@ Webflow.define('scroll', module.exports = function ($) {
 
   function ease(t) {
     return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
-  }
+  } // TODO: Re-implement after customer-facing comms
+  // function handleReducedMotionChange(evt) {
+  //   var {WF_CLICK_SCROLL} = NS_EVENTS;
+  //   if (evt.target.matches) {
+  //     $doc.off(WF_CLICK_SCROLL);
+  //   } else {
+  //     $doc.on(WF_CLICK_SCROLL, localHrefSelector, validateScroll);
+  //   }
+  // }
 
-  function handleReducedMotionChange(evt) {
-    var WF_CLICK_SCROLL = NS_EVENTS.WF_CLICK_SCROLL;
-
-    if (evt.target.matches) {
-      $doc.off(WF_CLICK_SCROLL);
-    } else {
-      $doc.on(WF_CLICK_SCROLL, localHrefSelector, validateScroll);
-    }
-  }
 
   function ready() {
+    // eslint-disable-next-line no-unused-vars
     var WF_CHANGE = NS_EVENTS.WF_CHANGE,
         WF_CLICK_EMPTY = NS_EVENTS.WF_CLICK_EMPTY,
         WF_CLICK_SCROLL = NS_EVENTS.WF_CLICK_SCROLL;
-    locHref = loc.href.split('#')[0];
-    var reducedMotionQ = window.matchMedia('(prefers-reduced-motion: reduce)');
+    locHref = loc.href.split('#')[0]; // var reducedMotionQ = window.matchMedia(
+    //   '(prefers-reduced-motion: reduce)'
+    // );
+    // if (!reducedMotionQ.matches) {
 
-    if (!reducedMotionQ.matches) {
-      $doc.on(WF_CLICK_SCROLL, localHrefSelector, validateScroll);
-    }
+    $doc.on(WF_CLICK_SCROLL, localHrefSelector, validateScroll); // }
+    // $(reducedMotionQ).on(WF_CHANGE, handleReducedMotionChange);
 
-    $(reducedMotionQ).on(WF_CHANGE, handleReducedMotionChange);
     /**
      * Prevent empty hash links from triggering scroll.
      * Legacy feature to preserve: use the default "#" link
