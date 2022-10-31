@@ -91,16 +91,29 @@
         <div class="accordion-wrapper">
           <div class="accordion-item">
             <div id="q1" class="accordion-item-trigger">
-              <h4 id="acd_bg" class="accordion-heading">How to keep Foca running in background<br></h4><img src="images/icon-more.png" loading="lazy" alt="" class="icon-2 accordion-icon"><a href="#background"></a>
+              <h4 id="acd_notification" class="accordion-heading">How to configure notification?<br></h4><img src="images/icon-more.png" loading="lazy" alt="" class="icon-2 accordion-icon"><a href="#notification"></a>
             </div>
             <div class="accordion-item-content">
-              <p class="paragraph">Note: Following setting steps are only needed for <b>Android</b> phones/pads. If you're using <b>iPhone/Mac/iPad</b>, Foca should work normally in background without any extra configuration.</p>
-              <p class="head">Version newer than 1.3.2</p>
-              <p class="paragraph">Please do the setting steps based on the brand.<br>
-                <b>Xiaomi/Redmi:</b><br>
+              <p class="head">Note:</p>
+              <p class="paragraph">
                 <ol>
-                  <li>Long press the app icon to open the shortcut menu and press "App Info".</li>
-                  <li>In "App Info" settings page, go to Notifications, enable the following:</li>
+                  <li>Following setting steps are for <b>Android</b> phones/pads. If you're using <b>iPhone/Mac/iPad</b>, you can configure notification using the setting inside Foca app.</li>
+                  <li>Steps are for Version newer than 1.3.2 only. We updated the notification to make Foca work better in background, which might require some extra setting steps from you.</li>
+                  <li>Foca's notification goes with Android system settings.<br>
+                    So if you want both ringtone and vibration, you should enable ringtone (mode) in your system;<br>
+                    if you want vibration only, you should enable vibration (mode);<br>
+                    while silent (mode) will only show a notification banner, with no ringtone nor vibration.<br>
+                    As for "Do not disturb" mode, it will simply disable all notifications.</li>
+                </ol>
+              </p>
+              <p class="head">For Version newer than 1.3.2 only:</p>
+              <p class="paragraph">
+                <b>Xiaomi/Redmi:</b><br>
+                Xiaomi/Redmi has very strict permission management strategy. This makes it harder for Foca to send notifications.<br>
+                If you see any issues when using Foca with Xiaomi/Redmi phones, please follow the following steps to fix it.<br>
+                <ol>
+                  <li>In Foca's in-app Settings page, press "Background Notification". This will bring you to the "App Info"'s Notification setting page for further configuration.</li>
+                  <li>In the Notification settings page, enable the following,</li>
                     <ul>
                       <li>Show Notifications</li>
                       <li>Allow flating Notifications</li>
@@ -108,23 +121,36 @@
                       <li>Allow playing sound</li>
                       <li>Allow vibration</li>
                     </ul>
-                <li>Rules for grouped Notifications -> Important</li>
-                <li>For Individual Notification Categories, i.e. Foca Notifications 1, 2 and 3:</li>
+                <li>Rules for grouped Notifications -> set to Important.</li>
+                <li>For Individual Notification Categories, i.e. Foca Notifications 1, 2 and 3,</li>
                   <ul>
                     <li>Enable: Show notifications, Allow floating notifications, Vibration.</li>
                     <li>On the Lock screen -> Show all notifications and their contents</li>
                   </ul>
                 </ol>
-                <b>Samsung:</b><br>
-                <b>Google and Oneplus:</b><br>
+                <b>Samsung, Google Pixel and Oneplus:</b><br>
+                In Foca's in-app Settings page, press "Background Notification" if the status is shown as "Off". This will bring you to the "App Info"'s Notification setting page. Enable notification once you reach the page.<br>
+                Based on your need, choose ringtone/vibration/silent/"do not distube" mode accordingly.<br><br>
                 <b>Other brands:</b><br>
+                We currently don't have enough information about other brands, feel free to send us an email if you find a way to properly configure the notification :)<br>
               </p>
-              <p class="head">Version prior to 1.3.2</p>
-              <p class="paragraph">- Make sure you lock Foca in the Multi-tasking interface.<br>- Make sure you permit &#x27;Auto-Start&#x27; for Foca if applicable.<br>- Make sure you permit &#x27;Ignore battery optimization&#x27; for Foca if applicable.</p>
             </div>
           </div>
           <div class="accordion-item">
             <div id="q2" class="accordion-item-trigger">
+              <h4 id="acd_bg" class="accordion-heading"><strong class="bold-text">How to keep Foca running in background?</strong></h4><img src="images/icon-more.png" loading="lazy" alt="" class="icon-2 accordion-icon"><a href="#background"></a>
+            </div>
+            <div class="accordion-item-content">
+              <p class="head">Note:</p>
+              <p class="paragraph">Following setting steps are for <b>Android</b> phones/pads. If you're using <b>iPhone/Mac/iPad</b>, your Foca app should run normally in the background already without any extra configuration step.</p>
+              <p class="head">Version newer than 1.3.2:</p>
+              <p class="paragraph">Starting from Version 1.3.2, background running is closely related to notification. If you are getting no notification (vibration or sound) when your session ends, please check the last session "How to configure notification?".<br>
+              <p class="head">Version prior to 1.3.2:</p>
+              <p class="paragraph">- Make sure you lock Foca in the Multi-tasking interface.<br>- Make sure you permit &#x27;Auto-Start&#x27; for Foca if applicable.<br>- Make sure you permit &#x27;Ignore battery optimization&#x27; for Foca if applicable.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div id="q3" class="accordion-item-trigger">
               <h4 id="acd_pomodoro" class="accordion-heading"><strong class="bold-text">What is Pomodoro Technique?</strong></h4><img src="images/icon-more.png" loading="lazy" alt="" class="icon-2 accordion-icon"><a href="#pomodoro"></a>
             </div>
             <div class="accordion-item-content">
@@ -132,7 +158,7 @@
             </div>
           </div>
           <div class="accordion-item">
-            <div id="q3" class="accordion-item-trigger">
+            <div id="q4" class="accordion-item-trigger">
               <h4 id="acd_autorun" class="accordion-heading"><strong>What is Auto-Run in Timer Settings?</strong></h4><img src="images/icon-more.png" loading="lazy" alt="" class="icon-2 accordion-icon"><a href="#autorun"></a>
             </div>
             <div class="accordion-item-content">
@@ -140,15 +166,15 @@
             </div>
           </div>
           <div class="accordion-item">
-            <div id="q4" class="accordion-item-trigger">
-              <h4 id="acd_getstarted" class="accordion-heading">How to get started with Foca App<br></h4><img src="images/icon-more.png" loading="lazy" alt="" class="icon-2 accordion-icon"><a href="#getstarted"></a>
+            <div id="q5" class="accordion-item-trigger">
+              <h4 id="acd_getstarted" class="accordion-heading">How to get started with Foca App?<br></h4><img src="images/icon-more.png" loading="lazy" alt="" class="icon-2 accordion-icon"><a href="#getstarted"></a>
             </div>
             <div class="accordion-item-content">
               <p class="paragraph">Normal Mode<br>-Tap the start button to enter a Focus Session.<br>- Concentrate on your work with the white noise and minimalist background.<br>- At the end of the Fucus session, you can choose to start stretch exercise, take a break or skip the break session.<br><br>You can also choose to start an Auto-Run mode in Timer Settings.</p>
             </div>
           </div>
           <div class="accordion-item">
-            <div id="q5" class="accordion-item-trigger">
+            <div id="q6" class="accordion-item-trigger">
               <h4 id="acd_duration" class="accordion-heading">How to change the time duration?<br></h4><img src="images/icon-more.png" loading="lazy" alt="" class="icon-2 accordion-icon"><a href="#duration"></a>
             </div>
             <div class="accordion-item-content">
@@ -156,11 +182,11 @@
             </div>
           </div>
           <div class="accordion-item">
-            <div id="q6" class="accordion-item-trigger">
+            <div id="q7" class="accordion-item-trigger">
               <h4 id="acd_music" class="accordion-heading"><strong>What if I want to use another music player while using Foca?</strong></h4><img src="images/icon-more.png" loading="lazy" alt="" class="icon-2 accordion-icon"><a href="#music"></a>
             </div>
             <div class="accordion-item-content">
-              <p class="paragraph">You can start a timer in Foca first, then play another music player. You can switch to Foca later once the Spotify music gets started.On the other hand, we would suggest listening to the white noises provided by Foca, since the list is carefully selected and more helpful for concentration.</p>
+              <p class="paragraph">You can start a timer in Foca first, then play another music player. You can switch to Foca later once the Spotify music gets started. On the other hand, we would suggest listening to the white noises provided by Foca, since the list is carefully selected and more helpful for concentration.</p>
             </div>
           </div>
         </div>
@@ -188,6 +214,9 @@
     var hash = window.location.hash
    
     window.onload = function() {
+      if (hash == "#notification") {
+        document.getElementById("acd_notification").click();
+      }
       if (hash == "#background") {
         document.getElementById("acd_bg").click();
       }
