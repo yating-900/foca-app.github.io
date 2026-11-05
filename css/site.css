@@ -31,7 +31,7 @@
 }
 
 :root {
-  --bg: #faf7f4;
+  --bg: #fbfbfa;
   --paper: #ffffff;
   --ink: #1c1917;
   --muted: #78716c;
@@ -123,7 +123,7 @@ a {
   min-height: var(--nav-h);
   display: flex;
   align-items: center;
-  background: rgba(250, 247, 244, 0.92);
+  background: rgba(251, 251, 250, 0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--line);
 }
@@ -1048,4 +1048,257 @@ h2 {
 
 section[id] {
   scroll-margin-top: 120px;
+}
+
+.hero {
+  min-height: calc(100svh - var(--nav-h));
+  display: flex;
+  align-items: center;
+  padding: 28px 0 20px;
+}
+
+.hero-centered {
+  text-align: center;
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.hero h1 {
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+
+.hero-line {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 1.125rem;
+}
+
+.store-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 12px;
+  margin-top: 22px;
+}
+
+.badge img {
+  display: block;
+  height: 40px;
+  width: auto;
+  border-radius: 8px;
+  filter: invert(1);
+}
+
+.badge-primary img {
+  height: 54px;
+}
+
+.badge-secondary img {
+  height: 36px;
+  opacity: 0.72;
+}
+
+.badge-secondary:hover img,
+.badge-primary:hover img {
+  opacity: 1;
+}
+
+.hero-product {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.hero-product .device {
+  width: min(270px, 68vw);
+}
+
+.chapter {
+  padding: 104px 0;
+  text-align: center;
+}
+
+.chapter-copy {
+  max-width: 36rem;
+}
+
+.chapter h2 {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.chapter-copy p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.chapter-figure {
+  margin: 40px auto 0;
+}
+
+.chapter-figure > img {
+  width: min(380px, 78vw);
+  height: auto;
+}
+
+.chapter-ink {
+  background: #141413;
+  color: #f6f5f3;
+}
+
+.chapter-ink .chapter-copy p,
+.chapter-ink .whisper {
+  color: rgba(246, 245, 243, 0.68);
+}
+
+.chapter-figure .device,
+.chapter-ink .device {
+  width: min(300px, 72vw);
+  margin-inline: auto;
+}
+
+.chapter-ink .device {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.4);
+}
+
+.whisper {
+  max-width: 34rem;
+  margin: 28px auto 0;
+  padding-inline: 20px;
+  font-size: 0.95rem;
+}
+
+.duo {
+  position: relative;
+  width: min(680px, calc(100% - 40px));
+  height: 520px;
+  margin: 48px auto 0;
+}
+
+.duo .device-mac {
+  position: absolute;
+  left: 0;
+  top: 24px;
+  width: 64%;
+}
+
+.duo .device {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(230px, 46%);
+}
+
+.rail-section {
+  padding: 64px 0 28px;
+  text-align: center;
+}
+
+.rail-section h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 600;
+}
+
+.app-rail {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-top: 28px;
+}
+
+.app-rail a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: min(320px, 100%);
+  padding: 8px 28px;
+  text-decoration: none;
+  color: inherit;
+  text-align: left;
+}
+
+.app-rail a + a {
+  border-left: 1px solid var(--line);
+}
+
+.app-rail img {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  flex: 0 0 auto;
+}
+
+.rail-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.rail-name {
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  font-size: 1.15rem;
+}
+
+.rail-tag {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.rail-arrow {
+  margin-left: auto;
+  color: var(--muted);
+}
+
+.app-rail a:hover .rail-name,
+.app-rail a:hover .rail-arrow {
+  color: var(--peach-btn);
+}
+
+.studio-line {
+  margin: 0;
+  padding: 12px 20px 36px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.studio-line a {
+  color: var(--ink);
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+
+.studio-line a:hover {
+  color: var(--peach-btn);
+}
+
+#faq {
+  padding-top: 36px;
+}
+
+@media (max-width: 719px) {
+  .duo {
+    height: 430px;
+  }
+
+  .app-rail {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .app-rail a + a {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .badge-primary img {
+    height: 48px;
+  }
 }
