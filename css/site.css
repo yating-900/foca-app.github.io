@@ -1,36 +1,14 @@
 @font-face {
-  font-family: "Plus Jakarta Display";
-  src: url("../fonts/PlusJakartaDisplay-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Plus Jakarta Display";
-  src: url("../fonts/PlusJakartaDisplay-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Plus Jakarta Display";
-  src: url("../fonts/PlusJakartaDisplay-Bold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Plus Jakarta Display";
-  src: url("../fonts/PlusJakartaDisplay-Bold.ttf") format("truetype");
-  font-weight: 700;
+  font-family: "Inter";
+  src: url("../fonts/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
+  --font-sans: "Inter", "Inter Variable", -apple-system, BlinkMacSystemFont,
+    "SF Pro Text", "Segoe UI", system-ui, sans-serif;
   --bg: #fbfbfa;
   --paper: #ffffff;
   --ink: #1c1917;
@@ -54,6 +32,14 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 html {
   background: var(--bg);
   scroll-behavior: smooth;
@@ -63,10 +49,10 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--bg);
-  font-family: "Plus Jakarta Display", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size: 1.0625rem;
-  line-height: 1.6;
-  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -0.011em;
 }
 
 img {
@@ -162,8 +148,10 @@ a {
 .nav-links a {
   text-decoration: none;
   color: var(--muted);
-  font-weight: 600;
-  font-size: 0.84rem;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  letter-spacing: 0;
 }
 
 .nav-links a:hover,
@@ -206,8 +194,9 @@ a {
   color: var(--ink);
   border: 1px solid rgba(28, 25, 23, 0.22);
   padding: 0.48rem 0.75rem;
-  font-size: 0.84rem;
-  font-weight: 600;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .btn-ghost:hover,
@@ -239,9 +228,10 @@ a {
   gap: 10px;
   margin-bottom: 12px;
   color: var(--coral);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
@@ -254,17 +244,27 @@ a {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 1.02;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
   font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
 }
 
 .lede {
   margin-top: 16px;
   max-width: 36rem;
   color: var(--muted);
-  font-size: 1.125rem;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -0.011em;
 }
 
 .hero .lede {
@@ -368,20 +368,37 @@ h1 {
 
 .store-badges {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
   justify-content: center;
-  gap: 8px;
-  margin: 18px 0 0;
+  gap: 10px;
+  margin: 20px 0 0;
   padding: 0;
   list-style: none;
+}
+
+.store-badges li {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  flex: 0 0 auto;
+}
+
+.store-badges a {
+  display: block;
+  line-height: 0;
 }
 
 .store-badges img {
   display: block;
   height: 40px;
   width: auto;
-  border-radius: 7px;
-  border: 1px solid var(--line);
+  max-width: none;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  filter: invert(1);
 }
 
 .device img {
@@ -409,9 +426,9 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
-  line-height: 1.08;
-  letter-spacing: -0.03em;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
   font-weight: 600;
 }
 
@@ -791,9 +808,10 @@ h2 {
   position: relative;
   padding: 1.15rem 2rem 1.15rem 0;
   cursor: pointer;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.35;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.4;
   list-style: none;
 }
 
@@ -822,6 +840,10 @@ h2 {
   margin: 0 0 1.15rem;
   max-width: 65ch;
   color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
 }
 
 .help-note {
@@ -846,10 +868,10 @@ h2 {
 }
 
 .page-main.app-page h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
   max-width: 8ch;
-  line-height: 1.02;
-  letter-spacing: -0.03em;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
 }
 
 .subhead {
@@ -957,7 +979,9 @@ h2 {
   }
 
   .nav-links a {
-    font-size: 0.95rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    letter-spacing: 0;
   }
 
   .side-apps,
@@ -1067,13 +1091,16 @@ section[id] {
   font-size: clamp(2.75rem, 6vw, 4.5rem);
   font-weight: 600;
   letter-spacing: -0.035em;
-  line-height: 1.02;
+  line-height: 1.05;
 }
 
 .hero-line {
   margin-top: 14px;
   color: var(--muted);
-  font-size: 1.125rem;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -0.011em;
 }
 
 .store-row {
@@ -1094,10 +1121,12 @@ section[id] {
 
 .badge img {
   display: block;
-  height: 44px;
+  height: 40px;
   width: auto;
   max-width: none;
-  border-radius: 8px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
   filter: invert(1);
 }
 
@@ -1123,7 +1152,8 @@ section[id] {
 .chapter h2 {
   font-size: clamp(1.75rem, 3vw, 2.25rem);
   font-weight: 600;
-  letter-spacing: -0.03em;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
 }
 
 .chapter-copy p {
@@ -1138,6 +1168,20 @@ section[id] {
 .chapter-figure > img {
   width: min(380px, 78vw);
   height: auto;
+}
+
+.chapter-wide {
+  width: min(1080px, 100%);
+}
+
+#platforms .chapter-copy {
+  max-width: 52rem;
+}
+
+.chapter-wide img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
 }
 
 .chapter-ink {
@@ -1236,8 +1280,9 @@ section[id] {
 
 .rail-name {
   font-weight: 600;
-  letter-spacing: -0.03em;
-  font-size: 1.15rem;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  font-size: 1.25rem;
 }
 
 .rail-tag {
@@ -1278,6 +1323,10 @@ section[id] {
 }
 
 @media (max-width: 719px) {
+  body {
+    font-size: 1rem;
+  }
+
   .duo {
     height: 430px;
   }
@@ -1293,18 +1342,17 @@ section[id] {
   }
 }
 
-@media (max-width: 500px) {
-  .store-row {
+@media (max-width: 520px) {
+  .hero .store-badges {
+    width: calc(100% + 40px);
+    margin-left: -20px;
     gap: 8px;
-  }
-
-  .badge img {
-    height: 36px;
   }
 }
 
-@media (max-width: 400px) {
-  .badge img {
-    height: 32px;
+@media (max-width: 420px) {
+  .store-badges {
+    flex-wrap: wrap;
+    gap: 8px;
   }
 }
