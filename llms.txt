@@ -6,4 +6,6 @@
 - Core: Interval & HIIT timer (iPhone)
 ## Site
 - Home: https://foca.work/
+- Dayfold: https://foca.work/dayfold.html
+- Core: https://foca.work/core.html
 - Android notification FAQ: https://foca.work/faq.html
