@@ -1,37 +1,41 @@
-## Welcome to Foca
+# Foca Studio
 
-You can use the [editor on GitHub](https://github.com/yating-900/yating-900.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Static site for [foca.work](https://foca.work). GitHub Pages serves this repository from the `main` branch at the root. There is no build step. `.nojekyll` is included so Pages publishes the HTML, CSS, and JS as-is.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Deploy
 
-### Markdown
+1. Merge to `main`.
+2. Open **Settings → Pages**.
+3. Source: **Deploy from a branch**.
+4. Branch: **main**, folder: **/ (root)**.
+5. Custom domain: `foca.work` (the `CNAME` file already contains that hostname).
+6. After DNS points here, turn on **Enforce HTTPS**.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## DNS for foca.work
 
-```markdown
-Syntax highlighted code block
+This repository does not change DNS. If `foca.work` still points at Webflow, the live site stays on Webflow until the records below replace those.
 
-# Header 1
-## Header 2
-### Header 3
+Check what the domain uses today:
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+dig foca.work A +short
+dig foca.work AAAA +short
+dig www.foca.work CNAME +short
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+At the DNS host for `foca.work`:
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yating-900/yating-900.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1. Remove Webflow records. Apex `A` records are often `75.2.70.75` and `99.83.190.102`. A `www` `CNAME` often points at `proxy-ssl.webflow.com` or `cdn.webflow.com`.
+2. Point the apex `foca.work` at GitHub Pages:
+   - `A` `@` → `185.199.108.153`
+   - `A` `@` → `185.199.109.153`
+   - `A` `@` → `185.199.110.153`
+   - `A` `@` → `185.199.111.153`
+   - `AAAA` `@` → `2606:50c0:8000::153`
+   - `AAAA` `@` → `2606:50c0:8001::153`
+   - `AAAA` `@` → `2606:50c0:8002::153`
+   - `AAAA` `@` → `2606:50c0:8003::153`
+3. If `www.foca.work` should work, set `CNAME` `www` → `yating-900.github.io`.
+4. If GitHub Pages asks you to verify the domain, add the TXT record shown under **Settings → Pages**. Do not invent one.
+5. If the DNS host proxies traffic (for example Cloudflare’s orange cloud), set the GitHub records to DNS-only so certificate provisioning can finish.
+6. Wait for propagation, open `https://foca.work`, then enable **Enforce HTTPS**.

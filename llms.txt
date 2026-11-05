@@ -1,0 +1,9 @@
+# Foca Studio
+> Indie Apple apps by Yating Lu: Foca, Dayfold, Core.
+## Apps
+- Foca: Pomodoro focus timer (iPhone & Mac)
+- Dayfold: Countdown & anniversary widgets
+- Core: Interval & HIIT timer
+## Site
+- Home: https://foca.work/
+- Android notification FAQ: https://foca.work/faq.html

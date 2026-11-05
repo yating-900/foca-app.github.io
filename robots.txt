@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://foca.work/sitemap.xml
