@@ -1078,33 +1078,27 @@ section[id] {
 
 .store-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  gap: 10px 12px;
+  gap: 12px;
   margin-top: 22px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  line-height: 0;
 }
 
 .badge img {
   display: block;
-  height: 40px;
+  height: 44px;
   width: auto;
+  max-width: none;
   border-radius: 8px;
   filter: invert(1);
-}
-
-.badge-primary img {
-  height: 54px;
-}
-
-.badge-secondary img {
-  height: 36px;
-  opacity: 0.72;
-}
-
-.badge-secondary:hover img,
-.badge-primary:hover img {
-  opacity: 1;
 }
 
 .hero-product {
@@ -1297,8 +1291,20 @@ section[id] {
     border-left: 0;
     border-top: 1px solid var(--line);
   }
+}
 
-  .badge-primary img {
-    height: 48px;
+@media (max-width: 500px) {
+  .store-row {
+    gap: 8px;
+  }
+
+  .badge img {
+    height: 36px;
+  }
+}
+
+@media (max-width: 400px) {
+  .badge img {
+    height: 32px;
   }
 }
