@@ -480,6 +480,43 @@ h2 {
   text-underline-offset: 3px;
 }
 
+.product-pair {
+  display: grid;
+  gap: 18px;
+}
+
+.product-panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: clamp(24px, 3vw, 40px);
+}
+
+.product-panel h2 {
+  font-size: clamp(1.85rem, 3vw, 2.55rem);
+  max-width: 14ch;
+}
+
+.product-panel .lede {
+  font-size: 1.05rem;
+}
+
+.product-panel .points {
+  margin-bottom: 0.25rem;
+}
+
+.product-panel .cta-row {
+  margin-top: auto;
+  padding-top: 0.35rem;
+}
+
+.product-panel .btn {
+  white-space: normal;
+  text-align: center;
+}
+
 .why {
   background: #242527;
   color: #f7f2ec;
@@ -684,7 +721,8 @@ h2 {
   }
 
   .quote-grid,
-  .cards {
+  .cards,
+  .product-pair {
     grid-template-columns: 1fr 1fr;
   }
 
