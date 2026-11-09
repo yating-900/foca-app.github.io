@@ -1,3 +1,38 @@
+# 截图待补清单（2026-11-09 更新，优先看这一节）
+
+网站已上线（main 分支）。下面是还缺的或要替换的素材。规格统一：**iPhone 真机截图原图（1206×2622 或同代机型），不带营销文字和设备边框，深色/浅色跟随 App 本身**；放到 `design/assets-incoming/`，按文件名命名。
+
+## Foca（首页 index.html）
+| 文件名 | 画面 | 替换 |
+|---|---|---|
+| foca-ios-break.png | 休息倒计时（蓝色 Take a break） | images/shot-ios-break.webp（现在是旧图放大） |
+| foca-ios-stats.png | 统计页顶部（Summary + Focus Time 柱状图） | images/shot-ios-stats.webp（旧图） |
+| foca-ios-distribution.png | 统计页 Task Distribution 饼图 | images/shot-ios-distribution.webp（旧图） |
+| foca-mac-timer.png | Mac 主计时窗口，⌘⇧4 + 空格截窗口 | 首屏 Mac+iPhone 合成图（images/foca-dual-mac-iphone.webp 只有 1080px） |
+| foca-video.mp4（可选） | 20–30 秒介绍视频，16:9，≤8MB | 首页视频位（目前隐藏） |
+
+## Dayfold（dayfold.html）
+App Store 上有 7 张预览图：01-home、02-widgets、03-lock-screen、04-style、05-retro-lcd、06-neon、07-ticket。最好直接从 App Store Connect 导出这批原图，或按同样内容在真机截图：
+| 文件名 | 画面 | 用在 |
+|---|---|---|
+| dayfold-lockscreen.png | 锁屏上的 Dayfold 小组件（圆形/矩形） | Widgets 段 |
+| dayfold-widgets-medium.png | 主屏幕中号小组件 | Widgets 段 |
+| dayfold-style-retro-lcd.png / -neon.png / -ticket.png | 三种卡片样式的大卡片 | Card styles 段 |
+主屏截图请避开 Dock 里的第三方 App 图标（或允许我们裁掉）。
+
+## Core（core.html）
+| 文件名 | 画面 | 替换 |
+|---|---|---|
+| core-history.png | 历史页（Workout History：Total/Count/Today + 周趋势） | images/shot-core-trend.webp（现在是模拟器截图，底部标签图标和真机不一致） |
+| core-editor.png（可选） | 编辑训练（Work / Rest / Sets） | 备用 |
+| core-done.png（可选） | 训练完成页（Well Done） | 备用 |
+
+## 社交推荐（首页 Loved by users and creators）
+- iKsuraj 视频的一帧截图（https://youtu.be/h5YkKT6EGAM?t=68），替换 images/foca-video-cover-2.webp（现在是用 Foca 截图拼的）
+- @earlmalaki、@studywithlanny 两条帖子的直达链接（现在链到主页）
+
+---
+
 # foca.work 改版 · 截图与视频素材需求
 
 这份文档写给负责制作素材的人（或 AI）。改版方向是 A3「Night Focus」：深色背景（#0B0B0C）、Foca 杏色强调色（#F4C59B）、衬线标题。所有素材都要放进这个深色页面里，请按下面的规格准备。
