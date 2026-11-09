@@ -18,10 +18,22 @@
   <meta name="twitter:title" content="Foca Studio — Indie apps for focus, dates &amp; workouts">
   <meta name="twitter:description" content="Three apps from Foca Studio: Foca Pomodoro focus timer for iPhone, Mac, and Android; Dayfold countdown widgets; Core interval timer. Simple and ad-free.">
   <meta name="twitter:image" content="https://foca.work/images/webclip.png">
-  <meta name="theme-color" content="#FBFBFA">
+  <meta name="theme-color" content="#0B0B0C">
+  <meta name="apple-itunes-app" content="app-id=1526204217">
   <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="images/webclip.png">
-  <link rel="stylesheet" href="css/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap">
+  <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/home.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-53X1JLJD83"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-53X1JLJD83');
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -175,87 +187,174 @@
   </script>
 </head>
 <body>
-  <a class="skip" href="#content">Skip to content</a>
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="index.html">
-        <img src="images/icon-foca.png" width="32" height="32" alt="">
-        Foca Studio
-      </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#apps">Apps</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <a class="btn btn-ghost" href="https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217">Download Foca</a>
-    </div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="wrap nav">
+    <a class="brand" href="/">
+      <img src="images/icon-foca.png" alt="" width="32" height="32">
+      Foca Studio
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#foca">Foca</a>
+      <a href="#apps">Apps</a>
+      <a href="#team">Team</a>
+      <a href="faq.html">Help</a>
+      <a class="pill" href="#download">Download Foca</a>
+    </nav>
   </header>
 
-  <main id="content">
-    <section class="hero">
-      <div class="wrap hero-centered">
-        <h1>Focus, carefully made.</h1>
-        <p class="hero-line">Pomodoro for iPhone, Mac &amp; Android.</p>
-        <ul class="store-badges">
-          <li><a href="https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217"><img src="images/app-store.svg" alt="Download on the App Store"></a></li>
-          <li><a href="https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217"><img src="images/mac-app.svg" alt="Download for Mac"></a></li>
-          <li><a href="https://play.google.com/store/apps/details?id=com.pomodoro.foca"><img src="images/google-play.svg" alt="Get it on Google Play"></a></li>
-        </ul>
-      </div>
-      <figure class="hero-product">
-        <img src="images/foca-dual-mac-iphone.webp" width="1080" height="1080" alt="Foca on Mac and iPhone">
-      </figure>
-    </section>
-
-    <section class="chapter chapter-ink" id="foca">
-      <div class="wrap chapter-copy">
-        <h2>Focus that feels calm.</h2>
-      </div>
-      <figure class="chapter-figure">
-        <img src="images/Home.png" width="500" height="900" alt="Foca on iPhone, ready to start a 25 minute focus session">
-      </figure>
-    </section>
-
-    <section class="chapter">
-      <div class="wrap chapter-copy">
-        <h2>Stretch between sessions.</h2>
-      </div>
-      <figure class="chapter-figure">
-        <img src="images/Stretch.png" width="1000" height="1800" alt="Foca guiding a neck stretch between focus sessions">
-      </figure>
-    </section>
-
-    <section class="rail-section" id="apps">
-      <div class="wrap">
-        <h2>Also from Foca Studio</h2>
-        <div class="app-rail">
-          <a href="dayfold.html">
-            <img src="images/icon-dayfold.png" width="60" height="60" alt="">
-            <span class="rail-copy">
-              <span class="rail-name">Dayfold</span>
-              <span class="rail-tag">Days that matter, on Home Screen.</span>
-            </span>
-            <span class="rail-arrow" aria-hidden="true">→</span>
+  <main id="main">
+    <section class="wrap hero" id="download">
+      <div class="hero-copy">
+        <p class="eyebrow rise">Pomodoro timer · Mac, iPhone &amp; Android</p>
+        <h1 class="rise d1">Focus that feels calm.<br><em>Breaks that move you.</em></h1>
+        <p class="lead rise d2">A minimalist focus timer with guided stretch breaks, ambient sounds and simple stats. Loved by over 240,000 people since 2020.</p>
+        <div class="downloads" data-downloads>
+          <a class="dl primary" data-platform="mac" data-campaign="web_home_hero_mac" href="https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217?platform=mac">
+            <small>Download for</small><strong>Mac</strong>
           </a>
-          <a href="core.html">
-            <img src="images/icon-core.png" width="60" height="60" alt="">
-            <span class="rail-copy">
-              <span class="rail-name">Core</span>
-              <span class="rail-tag">Interval timer for workouts.</span>
-            </span>
-            <span class="rail-arrow" aria-hidden="true">→</span>
+          <a class="dl" data-platform="iphone" data-campaign="web_home_hero_iphone" href="https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217?platform=iphone">
+            <small>Download on the App Store</small><strong>iPhone</strong>
           </a>
+          <a class="dl" data-platform="android" data-campaign="web_home_hero_android" href="https://play.google.com/store/apps/details?id=com.pomodoro.foca&amp;referrer=utm_source%3Dfoca.work%26utm_medium%3Dwebsite%26utm_campaign%3Dhome_hero">
+            <small>Get it on Google Play</small><strong>Android</strong>
+          </a>
+        </div>
+        <p class="faint">Free to download · No ads · Foca Plus optional</p>
+      </div>
+
+      <div class="ring-wrap" aria-hidden="true">
+        <div class="ring">
+          <div class="glow"></div>
+          <svg viewBox="0 0 300 300">
+            <circle cx="150" cy="150" r="118" fill="none" stroke="#24221F" stroke-width="6"/>
+            <circle data-arc cx="150" cy="150" r="118" fill="none" stroke="#F4C59B" stroke-width="6" stroke-linecap="round" stroke-dasharray="741" stroke-dashoffset="0" transform="rotate(-90 150 150)"/>
+            <g class="orbit"><circle cx="150" cy="32" r="7" fill="#F4C59B"/></g>
+          </svg>
+          <div class="ring-face">
+            <span class="faint">1/4 · Focusing</span>
+            <span class="clock" data-clock>25:00</span>
+            <span style="color: var(--accent); font-size: 14px">● Work</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <p class="studio-line">A tiny studio. Fewer apps, higher craft. · <a href="mailto:foca-2020@outlook.com">foca-2020@outlook.com</a></p>
+    <!-- Set data-video="images/foca-video.mp4" and data-poster="images/foca-video-poster.webp" once the video is ready; the play button appears automatically. -->
+    <div class="wrap">
+      <div class="showcase reveal" data-video="" data-poster="">
+        <img src="images/foca-dual-mac-iphone.webp" alt="Foca running on a Mac and an iPhone" width="1080" height="1080">
+        <button class="play" type="button" hidden>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="#1A1208" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span>
+          Watch Foca in 30 seconds
+        </button>
+      </div>
+    </div>
 
-    <section class="section tight quiet" id="faq">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Frequently asked questions</h2>
+    <section class="wrap section" id="foca">
+      <div class="feature reveal">
+        <div class="feature-copy">
+          <p class="eyebrow">01 · Focus</p>
+          <h2>One ring. One task.<br>Nothing else on screen.</h2>
+          <p>Set your session, tag it with a category and start. Auto-Run keeps rounds going without tapping back in, and ambient sounds — forest, tide, café, bonfire — help you settle.</p>
         </div>
-        <div class="faq-list" data-accordion>
+        <div class="feature-media">
+          <img class="shot float" src="images/shot-ios-timer.webp" alt="Foca focus timer on iPhone" width="720" height="1357" loading="lazy">
+          <img class="shot lower float-2" src="images/shot-ios-sounds.webp" alt="Choosing an ambient sound in Foca" width="720" height="1357" loading="lazy">
+        </div>
+      </div>
+
+      <div class="feature flip reveal">
+        <div class="feature-media">
+          <img class="shot solo breathe" src="images/shot-ios-stretch.webp" alt="Guided neck stretch in Foca" width="720" height="1296" loading="lazy">
+        </div>
+        <div class="feature-copy">
+          <p class="eyebrow">02 · Break</p>
+          <h2>Breaks you actually take.</h2>
+          <p>When a session ends, Foca walks you through a short stretch for your neck, shoulders, back, hands or legs — with illustrations and voice guidance.</p>
+        </div>
+      </div>
+
+      <div class="feature reveal">
+        <div class="feature-copy">
+          <p class="eyebrow">03 · Review</p>
+          <h2>See where your time went.</h2>
+          <p>Focus records and statistics by category, on the Mac and the phone you already work on.</p>
+        </div>
+        <!-- Illustrative chart. Replace with images/shot-ios-stats.webp once the new screenshots arrive. -->
+        <div class="chart" role="img" aria-label="Illustration of a week of focus time">
+          <div><i style="height: 52%"></i>M</div>
+          <div><i style="height: 78%"></i>T</div>
+          <div><i style="height: 40%"></i>W</div>
+          <div><i class="hi" style="height: 92%"></i>T</div>
+          <div><i style="height: 66%"></i>F</div>
+          <div><i style="height: 30%"></i>S</div>
+          <div><i style="height: 58%"></i>S</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="quotes reveal">
+        <figure>
+          <blockquote>“I haven't seen such a simple and aesthetic app until now. I liked the idea of adding a short exercise tutor as a mood refreshment.”</blockquote>
+          <figcaption class="faint">App Store review</figcaption>
+        </figure>
+        <figure>
+          <blockquote>“Was looking for an alternative to the popular Forest timer app and found Foca!”</blockquote>
+          <figcaption class="faint">App Store review</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wrap section" id="apps">
+      <h2 class="section-title">Also from Foca Studio</h2>
+      <div class="apps reveal">
+        <a class="app-card dayfold" href="dayfold.html">
+          <span class="id">
+            <img src="images/icon-dayfold.png" alt="" width="56" height="56">
+            <span><span class="name">Dayfold</span><span class="tag">Countdown widgets · iPhone</span></span>
+          </span>
+          <span class="slogan">Fold a page.<br>Remember a day.</span>
+          <p>Birthdays, anniversaries and countdowns as Moment cards on your Home and Lock Screen.</p>
+          <span class="go">Meet Dayfold →</span>
+        </a>
+        <a class="app-card core" href="core.html">
+          <span class="id">
+            <img src="images/icon-core.png" alt="" width="56" height="56">
+            <span><span class="name">Core</span><span class="tag">Interval timer · iPhone</span></span>
+          </span>
+          <span class="slogan">Work. Rest.<br>Repeat the round.</span>
+          <p>Tabata, boxing and circuits with audio cues and workout history.</p>
+          <span class="go">Meet Core →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="wrap section" id="team">
+      <div class="team reveal">
+        <div class="team-copy">
+          <h2 class="section-title" style="margin: 0">Two people, three apps.</h2>
+          <p>Foca started in 2020, when we were both working from home — distracted, and stiff from sitting all day. We built the timer we wanted: Pomodoro plus a stretch. Dayfold and Core came from the same idea — small tools, made carefully.</p>
+        </div>
+        <div class="people">
+          <div class="person">
+            <img src="images/avatar-yating.webp" alt="Illustrated portrait of Yating" width="80" height="80">
+            <strong>Yating</strong>
+            <span>Founder · Product, Design &amp; Growth</span>
+          </div>
+          <div class="person">
+            <img src="images/avatar-raphael.webp" alt="Illustrated portrait of Raphael" width="80" height="80">
+            <strong>Raphael</strong>
+            <span>Full-stack Developer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="faq">
+      <h2 class="section-title">Frequently asked questions</h2>
+      <div class="faq-list" data-accordion>
           <details>
             <summary>What is Foca Studio?</summary>
             <p>Foca Studio is an indie app studio founded by Yating Lu. It builds simple, ad-free apps for focus, meaningful dates, and workouts — starting with Foca, Dayfold, and Core.</p>
@@ -288,29 +387,26 @@
             <summary>Are Foca Studio apps ad-free? Do you collect my data?</summary>
             <p>Foca is ad-free. Dayfold stores moment content locally on your device and does not require an account. Check each app’s App Store privacy label for the latest practices. Optional Pro / Plus unlocks are in-app purchases.</p>
           </details>
-        </div>
-        <p class="help-note">Using Foca on Android? Notification and background steps are in the <a href="faq.html">help center</a>.</p>
       </div>
+      <p class="help-note">Using Foca on Android? Notification and background steps are in the <a href="faq.html">help center</a>.</p>
     </section>
   </main>
 
   <footer class="footer">
     <div class="wrap footer-inner">
-      <div>
-        <p class="footer-brand">Foca Studio</p>
-        <p><a href="mailto:foca-2020@outlook.com">foca-2020@outlook.com</a></p>
-        <p class="copy">© Foca Studio</p>
-      </div>
+      <span>© Foca Studio · <a href="mailto:foca-2020@outlook.com">foca-2020@outlook.com</a></span>
       <nav aria-label="Footer">
         <a href="dayfold.html">Dayfold</a>
         <a href="core.html">Core</a>
+        <a href="faq.html">Help / FAQ</a>
         <a href="privacy-policy.html">Privacy</a>
         <a href="terms-of-use.html">Terms</a>
-        <a href="faq.html">Help / FAQ</a>
         <a href="https://apps.apple.com/us/developer/yating-lu/id1526204219">Developer profile</a>
       </nav>
     </div>
   </footer>
+
   <script src="js/faq.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>
