@@ -94,12 +94,7 @@ p { margin: 0; }
 .feature h2 { font-size: clamp(34px, 4vw, 46px); line-height: 1.08; }
 .feature-copy p:not(.eyebrow) { font-size: 18px; color: var(--muted); }
 .feature-media { flex: 1 1 380px; display: flex; justify-content: center; gap: 20px; }
-.shot { width: 46%; max-width: 240px; border-radius: 28px; border: 1px solid #2a2926; box-shadow: 0 24px 60px rgba(0,0,0,.5); }
-.shot.lower { margin-top: 48px; }
-.shot.solo { width: 60%; max-width: 280px; }
-.float { animation: float 6s ease-in-out infinite; }
-.float-2 { animation: float2 7s ease-in-out infinite; }
-.breathe { animation: stretch 4s ease-in-out infinite; }
+.shot { width: calc(50% - 10px); max-width: 260px; border-radius: 28px; border: 1px solid #2a2926; box-shadow: 0 24px 60px rgba(0,0,0,.5); }
 
 .chart { flex: 1 1 380px; background: var(--panel); border-radius: 24px; padding: 28px; height: 280px; display: flex; align-items: flex-end; gap: 10px; }
 .chart div { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 10px; height: 100%; font-size: 13px; color: var(--faint); }
@@ -161,9 +156,6 @@ p { margin: 0; }
 .footer a:hover { color: var(--ink); }
 
 /* Motion */
-@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
-@keyframes float2 { 0%,100% { transform: translateY(-8px); } 50% { transform: translateY(6px); } }
-@keyframes stretch { 0%,100% { transform: scale(1); } 50% { transform: scale(1.03); } }
 @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
 @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
 
@@ -182,7 +174,6 @@ p { margin: 0; }
 @media (max-width: 560px) {
   .people { grid-template-columns: 1fr; }
   .play { left: 14px; bottom: 14px; }
-  .shot.lower { margin-top: 24px; }
 }
 
 /* App sub-pages (dayfold.html, core.html). Each page sets --app / --app-ink / --app-soft on <body>. */
@@ -219,18 +210,15 @@ p { margin: 0; }
 .promo img { width: 56px; height: 56px; border-radius: 14px; }
 .promo strong { font-family: var(--serif); font-weight: 500; font-size: 26px; display: block; }
 
-/* Dayfold illustration */
-.moments { position: relative; width: min(420px, 100%); aspect-ratio: 1 / 1.05; }
-.moment { position: absolute; border-radius: 26px; padding: 22px 24px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 24px 60px rgba(0,0,0,.45); }
-.moment small { font-size: 14px; opacity: .75; }
-.moment b { font-family: var(--serif); font-weight: 500; font-size: 52px; line-height: 1; letter-spacing: -0.02em; }
-.moment b i { font-style: normal; font-family: var(--sans); font-size: 16px; font-weight: 500; opacity: .7; margin-left: 6px; }
-.moment.m1 { left: 0; top: 4%; width: 62%; height: 42%; background: #fbf6e4; color: #1c1b19; transform: rotate(-4deg); }
-.moment.m2 { right: 0; top: 22%; width: 56%; height: 38%; background: #ffcb45; color: #26241f; transform: rotate(5deg); }
-.moment.m3 { left: 12%; bottom: 2%; width: 66%; height: 40%; background: #1c1b19; color: #f5f1e6; border: 1px solid #3a3731; transform: rotate(-1deg); }
-.reveal.in .moment, .moments.in .moment { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
-.moment.m2 { animation-delay: .12s !important; }
-.moment.m3 { animation-delay: .24s !important; }
+/* Dayfold illustration (static, matches the Core panel) */
+.moments { width: min(420px, 100%); background: #1c1b19; border-radius: 32px; padding: 24px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 24px 60px rgba(0,0,0,.45); }
+.moment { border-radius: 20px; padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; }
+.moment small { font-size: 15px; opacity: .8; }
+.moment b { font-family: var(--serif); font-weight: 500; font-size: 40px; line-height: 1; letter-spacing: -0.02em; }
+.moment b i { font-style: normal; font-family: var(--sans); font-size: 14px; font-weight: 500; opacity: .7; margin-left: 6px; }
+.moment.m1 { background: #fbf6e4; color: #1c1b19; }
+.moment.m2 { background: #ffcb45; color: #26241f; }
+.moment.m3 { background: #2a2824; color: #f5f1e6; }
 
 /* Core illustration */
 .interval { width: min(420px, 100%); background: #1d1d2b; border-radius: 32px; padding: 32px; display: flex; flex-direction: column; gap: 22px; box-shadow: 0 24px 60px rgba(0,0,0,.45); }
