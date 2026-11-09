@@ -14,10 +14,22 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Core — Interval &amp; HIIT Timer">
   <meta name="twitter:description" content="An interval and HIIT timer for iPhone, from Foca Studio.">
-  <meta name="theme-color" content="#F6F1EB">
+  <meta name="theme-color" content="#0B0B0C">
+  <meta name="apple-itunes-app" content="app-id=1562215374">
   <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="images/webclip.png">
-  <link rel="stylesheet" href="css/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap">
+  <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/home.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-53X1JLJD83"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-53X1JLJD83');
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,66 +60,103 @@
   }
   </script>
 </head>
-<body>
-  <a class="skip" href="#content">Skip to content</a>
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="index.html">
-        <img src="images/icon-foca.png" width="32" height="32" alt="">
-        Foca Studio
-      </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="index.html#apps">Apps</a>
-        <a href="index.html#faq">FAQ</a>
-      </nav>
-      <a class="btn btn-ghost" href="https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217">Download Foca</a>
-    </div>
+<body style="--app: #8B8CF7;">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="wrap nav">
+    <a class="brand" href="index.html">Foca Studio</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#foca">Foca</a>
+      <a href="dayfold.html">Dayfold</a>
+      <a href="core.html" aria-current="page" style="color: var(--ink)">Core</a>
+      <a href="faq.html">Help</a>
+      <a class="pill" href="index.html#download">Download Foca</a>
+    </nav>
   </header>
 
-  <main id="content" class="page-main app-page">
-    <div class="wrap">
-      <p class="back"><a href="index.html">← Foca Studio</a></p>
-      <div class="app-hero">
-        <div>
-          <img class="app-icon" src="images/icon-core.png" width="88" height="88" alt="">
-          <p class="eyebrow">iPhone</p>
-          <h1>Core</h1>
-          <p class="lede">Clean rounds for Tabata, boxing, and custom workouts — readable from across the gym.</p>
-          <div class="cta-row">
-            <a class="badge badge-primary" href="https://apps.apple.com/us/app/interval-timer-core/id1562215374"><img src="images/app-store.svg" alt="Download on the App Store"></a>
-          </div>
-          <p class="micro">Available on iPhone.</p>
+  <main id="main">
+    <section class="wrap app-hero">
+      <div class="app-hero-copy">
+        <a class="back" href="index.html">← Foca Studio</a>
+        <div class="id">
+          <img src="images/icon-core.png" alt="" width="72" height="72">
+          <span><strong>Core</strong><span>Interval &amp; HIIT timer · iPhone</span></span>
         </div>
-        <div class="story story-core">
-          <h2>Rounds you can hear.</h2>
-          <p>Set the work, the rest, and how many times through. Audio cues carry the session, so the phone can stay on the floor while you train.</p>
+        <h1 class="rise">Work. Rest.<br><em>Repeat the round.</em></h1>
+        <p class="lead rise d1">A clean interval timer for Tabata, boxing and circuits — big numbers you can read from across the room, and audio cues so the phone can stay on the floor.</p>
+        <div class="downloads">
+          <a class="badge" data-platform="iphone" data-campaign="web_core_hero" href="https://apps.apple.com/us/app/interval-timer-core/id1562215374">
+            <img src="images/app-store.svg" alt="Download Core on the App Store" width="120" height="40">
+          </a>
+        </div>
+        <p class="faint">Free to download on iPhone</p>
+      </div>
+      <div class="app-hero-media">
+        <div class="interval" role="img" aria-label="Illustration of the Core interval timer mid-workout">
+          <div class="phase"><strong>WORK</strong><span>Round 3 of 8</span></div>
+          <div class="big">00:14</div>
+          <div class="segments"><i class="done"></i><i class="done"></i><i class="now"></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="next"><span>Next · Rest 00:10</span><span>Tabata</span></div>
         </div>
       </div>
+    </section>
 
-      <ul class="app-facts">
-        <li><strong>Rounds</strong><span>Work, rest, and the number of times through.</span></li>
-        <li><strong>Training</strong><span>Tabata, boxing, circuits, and similar sessions.</span></li>
-        <li><strong>Cues</strong><span>Audio for the change between work and rest.</span></li>
-        <li><strong>History</strong><span>A record of the workouts you finish.</span></li>
-      </ul>
-    </div>
+    <section class="wrap section">
+      <div class="split reveal">
+        <div>
+          <p class="eyebrow app">Why Core</p>
+          <h2>Set it once. Then just train.</h2>
+        </div>
+        <p>Choose your work time, rest time and how many rounds. Core counts you through every interval and tells you when to switch, so you're watching your form — not the clock.</p>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="grid4 reveal">
+        <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M10 2h4"/></svg><h3>Rounds</h3><p>Work, rest and the number of times through.</p></div>
+        <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg><h3>Saved workouts</h3><p>Keep the routines you repeat, ready to start.</p></div>
+        <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg><h3>Audio cues</h3><p>Hear every switch between work and rest.</p></div>
+        <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><h3>History</h3><p>A record of the workouts you finish.</p></div>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="split reveal">
+        <div>
+          <p class="eyebrow app">Made for</p>
+          <h2>Any workout with a rhythm.</h2>
+        </div>
+        <div class="uses">
+          <span>Tabata</span><span>HIIT</span><span>Boxing rounds</span><span>Circuit training</span><span>Jump rope</span><span>Core &amp; mobility</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <a class="promo reveal" href="index.html">
+        <span class="id">
+          <img src="images/icon-foca.png" alt="" width="56" height="56">
+          <span><span class="faint">Also from Foca Studio</span><strong>Foca — focus, then stretch.</strong></span>
+        </span>
+        <span style="font-weight: 700; color: var(--accent)">Meet Foca →</span>
+      </a>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="wrap footer-inner">
-      <div>
-        <p class="footer-brand">Foca Studio</p>
-        <p><a href="mailto:foca-2020@outlook.com">foca-2020@outlook.com</a></p>
-        <p class="copy">© Foca Studio</p>
-      </div>
+      <span>© Foca Studio · <a href="mailto:foca-2020@outlook.com">foca-2020@outlook.com</a></span>
       <nav aria-label="Footer">
-        <a href="index.html">Studio</a>
+        <a href="index.html">Foca</a>
         <a href="dayfold.html">Dayfold</a>
+        <a href="core.html">Core</a>
+        <a href="faq.html">Help / FAQ</a>
         <a href="privacy-policy.html">Privacy</a>
         <a href="terms-of-use.html">Terms</a>
-        <a href="faq.html">Help / FAQ</a>
       </nav>
     </div>
   </footer>
+
+  <script src="js/home.js"></script>
 </body>
 </html>

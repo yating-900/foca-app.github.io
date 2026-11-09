@@ -14,10 +14,22 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Dayfold — Countdown &amp; Anniversary Widgets">
   <meta name="twitter:description" content="Countdown and anniversary widgets for iPhone, from Foca Studio.">
-  <meta name="theme-color" content="#F6F1EB">
+  <meta name="theme-color" content="#0B0B0C">
+  <meta name="apple-itunes-app" content="app-id=6802240198">
   <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="images/webclip.png">
-  <link rel="stylesheet" href="css/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap">
+  <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/home.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-53X1JLJD83"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-53X1JLJD83');
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,66 +60,112 @@
   }
   </script>
 </head>
-<body>
-  <a class="skip" href="#content">Skip to content</a>
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="index.html">
-        <img src="images/icon-foca.png" width="32" height="32" alt="">
-        Foca Studio
-      </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="index.html#apps">Apps</a>
-        <a href="index.html#faq">FAQ</a>
-      </nav>
-      <a class="btn btn-ghost" href="https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217">Download Foca</a>
-    </div>
+<body style="--app: #FFCB45;">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="wrap nav">
+    <a class="brand" href="index.html">Foca Studio</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#foca">Foca</a>
+      <a href="dayfold.html" aria-current="page" style="color: var(--ink)">Dayfold</a>
+      <a href="core.html">Core</a>
+      <a href="faq.html">Help</a>
+      <a class="pill" href="index.html#download">Download Foca</a>
+    </nav>
   </header>
 
-  <main id="content" class="page-main app-page">
-    <div class="wrap">
-      <p class="back"><a href="index.html">← Foca Studio</a></p>
-      <div class="app-hero">
-        <div>
-          <img class="app-icon" src="images/icon-dayfold.png" width="88" height="88" alt="">
-          <p class="eyebrow">iPhone</p>
-          <h1>Dayfold</h1>
-          <p class="lede">Mark the days that matter — birthdays, launches, streaks — and keep the count on your Home Screen.</p>
-          <div class="cta-row">
-            <a class="badge badge-primary" href="https://apps.apple.com/us/app/dayfold-countdown-widgets/id6802240198"><img src="images/app-store.svg" alt="Download on the App Store"></a>
-          </div>
-          <p class="micro">Available on iPhone.</p>
+  <main id="main">
+    <section class="wrap app-hero">
+      <div class="app-hero-copy">
+        <a class="back" href="index.html">← Foca Studio</a>
+        <div class="id">
+          <img src="images/icon-dayfold.png" alt="" width="72" height="72">
+          <span><strong>Dayfold</strong><span>Countdown &amp; anniversary widgets · iPhone</span></span>
         </div>
-        <div class="story story-dayfold">
-          <h2>A number for the days you keep.</h2>
-          <p>Dayfold turns a meaningful date into a countdown or an anniversary card. The widget sits on the Home Screen and the Lock Screen, so you see the day without opening the app.</p>
+        <h1 class="rise">Fold a page.<br><em>Remember a day.</em></h1>
+        <p class="lead rise d1">Turn the dates that matter into Moment cards — birthdays, anniversaries, trips, exams — and keep the count on your Home Screen and Lock Screen.</p>
+        <div class="downloads">
+          <a class="badge" data-platform="iphone" data-campaign="web_dayfold_hero" href="https://apps.apple.com/us/app/dayfold-countdown-widgets/id6802240198">
+            <img src="images/app-store.svg" alt="Download Dayfold on the App Store" width="120" height="40">
+          </a>
+        </div>
+        <p class="faint">Free to download · Dayfold Pro optional · No account needed</p>
+      </div>
+      <div class="app-hero-media">
+        <div class="moments in" role="img" aria-label="Illustration of three Dayfold Moment cards">
+          <div class="moment m1"><small>Mom's birthday</small><b>12<i>days</i></b></div>
+          <div class="moment m2"><small>Tokyo trip</small><b>34<i>days</i></b></div>
+          <div class="moment m3"><small>Together since</small><b>1,204<i>days</i></b></div>
         </div>
       </div>
+    </section>
 
-      <ul class="app-facts">
-        <li><strong>Cards</strong><span>Countdown and anniversary cards for the dates you choose.</span></li>
-        <li><strong>Widgets</strong><span>Home Screen and Lock Screen, so the number is already there.</span></li>
-        <li><strong>Reminders</strong><span>Optional nudges before the day arrives.</span></li>
-        <li><strong>Repeats</strong><span>Yearly repeats for birthdays and anniversaries.</span></li>
-      </ul>
-    </div>
+    <section class="wrap section">
+      <div class="split reveal">
+        <div>
+          <p class="eyebrow app">Why Dayfold</p>
+          <h2>The number is already there when you look.</h2>
+        </div>
+        <p>Dayfold puts a meaningful date where you already look — your Home Screen and Lock Screen — so you see how close it is without opening an app. Each Moment gets its own card style and emoji, so a birthday doesn't look like a deadline.</p>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="grid4 reveal">
+        <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><h3>Moment cards</h3><p>Countdown or anniversary, each with its own style and emoji.</p></div>
+        <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="16" height="7" rx="2"/></svg><h3>Widgets</h3><p>Home Screen and Lock Screen widgets keep the count in view.</p></div>
+        <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg><h3>Reminders</h3><p>Optional nudges before the day arrives.</p></div>
+        <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 3l3 3-3 3"/><path d="M4 12V9a3 3 0 0 1 3-3h13"/><path d="M7 21l-3-3 3-3"/><path d="M20 12v3a3 3 0 0 1-3 3H4"/></svg><h3>Yearly repeats</h3><p>Birthdays and anniversaries roll over to next year on their own.</p></div>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="split reveal">
+        <div>
+          <p class="eyebrow app">Made for</p>
+          <h2>Any day worth counting.</h2>
+        </div>
+        <div class="uses">
+          <span>Birthdays</span><span>Anniversaries</span><span>Trips</span><span>Exams &amp; study plans</span><span>Launch days</span><span>Holidays</span><span>Milestones</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="split reveal">
+        <div>
+          <p class="eyebrow app">Private by default</p>
+          <h2>Your dates stay on your phone.</h2>
+        </div>
+        <p>Dayfold stores your Moments locally on your device and doesn't need an account. Check the App Store privacy label for the latest details.</p>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <a class="promo reveal" href="index.html">
+        <span class="id">
+          <img src="images/icon-foca.png" alt="" width="56" height="56">
+          <span><span class="faint">Also from Foca Studio</span><strong>Foca — focus, then stretch.</strong></span>
+        </span>
+        <span style="font-weight: 700; color: var(--accent)">Meet Foca →</span>
+      </a>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="wrap footer-inner">
-      <div>
-        <p class="footer-brand">Foca Studio</p>
-        <p><a href="mailto:foca-2020@outlook.com">foca-2020@outlook.com</a></p>
-        <p class="copy">© Foca Studio</p>
-      </div>
+      <span>© Foca Studio · <a href="mailto:foca-2020@outlook.com">foca-2020@outlook.com</a></span>
       <nav aria-label="Footer">
-        <a href="index.html">Studio</a>
+        <a href="index.html">Foca</a>
+        <a href="dayfold.html">Dayfold</a>
         <a href="core.html">Core</a>
+        <a href="faq.html">Help / FAQ</a>
         <a href="privacy-policy.html">Privacy</a>
         <a href="terms-of-use.html">Terms</a>
-        <a href="faq.html">Help / FAQ</a>
       </nav>
     </div>
   </footer>
+
+  <script src="js/home.js"></script>
 </body>
 </html>
