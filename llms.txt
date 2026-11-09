@@ -4,7 +4,8 @@
 ## Key facts
 - Foca is an ad-free Pomodoro focus timer for iPhone, Mac and Android.
 - After each focus session, Foca guides a short stretch (neck, shoulders, back, hands, legs, full body) with illustrations and voice guidance.
-- Foca includes ambient sounds such as Forest, Tide, Café, Storm, Bonfire and Library, plus Auto-Run and focus statistics.
+- Foca includes ambient sounds (more with Foca Plus), Auto-Run (four rounds free; custom with Foca Plus) and focus statistics.
+- In Foca, a guided stretch can be started at any time from the timer screen.
 - Foca is free to download; Foca Plus is an optional monthly, yearly or one-time upgrade.
 - Foca does not block apps or websites.
 - Dayfold turns important dates into countdown and anniversary cards with Home Screen and Lock Screen widgets. Free for 4 active moments; Dayfold Pro is optional.
