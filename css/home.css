@@ -245,7 +245,7 @@ p { margin: 0; }
 .answer img { max-width: 100%; border-radius: 12px; margin: 12px 0; }
 
 /* Dayfold screenshot + widget art */
-.app-hero-media .shot { width: min(300px, 70%); max-width: 300px; }
+.app-hero-media .shot { width: min(280px, 80%); max-width: 280px; }
 .widget-art { width: 100%; border-radius: 24px; }
 
 .split h2 + p { margin-top: 0; }
@@ -260,3 +260,10 @@ p { margin: 0; }
 .plan h3 { font-size: 28px; }
 .plan ul { margin: 6px 0 0; padding-left: 20px; color: var(--muted); }
 .plan li { margin-bottom: 6px; }
+
+.split-media { display: flex; justify-content: center; }
+.split-media .shot { width: min(280px, 80%); max-width: 280px; }
+.split-media .widget-art { max-width: 420px; border-radius: 28px; }
+.flip-split { flex-wrap: wrap-reverse; }
+.split .styles { margin-top: 20px; }
+video.shot { display: block; background: #f6f4ef; }
