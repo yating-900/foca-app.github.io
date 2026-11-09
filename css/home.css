@@ -228,3 +228,22 @@ p { margin: 0; }
 .segments i.done { background: var(--app); }
 .segments i.now { background: linear-gradient(90deg, var(--app) 60%, #3a3a55 60%); }
 .interval .next { display: flex; justify-content: space-between; color: #a9aad0; font-size: 15px; border-top: 1px solid #2e2e44; padding-top: 18px; }
+
+/* Text pages (faq.html, privacy-policy.html, terms-of-use.html) */
+.page-main { padding-block: 32px 0; }
+.page-main > .wrap { max-width: 860px; }
+.page-main h1 { font-size: clamp(40px, 5vw, 64px); line-height: 1.05; margin: 12px 0 20px; }
+.page-main .subhead { font-size: 19px; color: var(--muted); margin-bottom: 40px; }
+.prose { color: var(--muted); font-size: 17px; line-height: 1.7; }
+.prose h2 { color: var(--ink); font-size: 30px; margin: 48px 0 12px; }
+.prose h3 { color: var(--ink); font-family: var(--sans); font-weight: 600; font-size: 18px; letter-spacing: 0; margin: 28px 0 8px; }
+.prose p, .answer p { margin: 0 0 14px; }
+.prose strong, .answer strong { color: var(--ink); }
+.prose ul, .prose ol, .answer ul, .answer ol { padding-left: 22px; margin: 0 0 14px; }
+.prose li, .answer li { margin-bottom: 6px; }
+.answer { color: var(--muted); padding-bottom: 20px; line-height: 1.65; }
+.answer img { max-width: 100%; border-radius: 12px; margin: 12px 0; }
+
+/* Dayfold screenshot + widget art */
+.app-hero-media .shot { width: min(300px, 70%); max-width: 300px; }
+.widget-art { width: 100%; border-radius: 24px; }
