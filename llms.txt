@@ -1,11 +1,26 @@
 # Foca Studio
-> Indie apps by Yating Lu: Foca, Dayfold, Core.
+> Indie apps by Yating Lu and Raphael: Foca (Pomodoro focus timer with guided stretch breaks and ambient sounds), Dayfold (countdown and anniversary widgets) and Core (interval and HIIT timer). All ad-free.
+
+## Key facts
+- Foca is an ad-free Pomodoro focus timer for iPhone, Mac and Android.
+- After each focus session, Foca guides a short stretch (neck, shoulders, back, hands, legs, full body) with illustrations and voice guidance.
+- Foca includes ambient sounds such as Forest, Tide, Café, Storm, Bonfire and Library, plus Auto-Run and focus statistics.
+- Foca is free to download; Foca Plus is an optional monthly, yearly or one-time upgrade.
+- Foca does not block apps or websites.
+- Dayfold turns important dates into countdown and anniversary cards with Home Screen and Lock Screen widgets. Free for 4 active moments; Dayfold Pro is optional.
+- Core is an interval timer for HIIT, Tabata, circuits and boxing, with saved workouts, audio cues and weekly trends. Core Pro adds full history, monthly and yearly trends and CSV export.
+
 ## Apps
-- Foca: Pomodoro focus timer (iPhone, Mac, and Android)
-- Dayfold: Countdown & anniversary widgets (iPhone)
-- Core: Interval & HIIT timer (iPhone)
-## Site
-- Home: https://foca.work/
+- Foca on the App Store (iPhone and Mac): https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217
+- Foca on Google Play: https://play.google.com/store/apps/details?id=com.pomodoro.foca
+- Dayfold on the App Store: https://apps.apple.com/us/app/dayfold-countdown-widgets/id6802240198
+- Core on the App Store: https://apps.apple.com/us/app/core-interval-hiit-timer/id1562215374
+
+## Pages
+- Home (Foca): https://foca.work/
 - Dayfold: https://foca.work/dayfold.html
 - Core: https://foca.work/core.html
-- Android notification FAQ: https://foca.work/faq.html
+- Help / FAQ: https://foca.work/faq.html
+
+## Guides
+- Pomodoro timer with guided stretch breaks: https://foca.work/guides/pomodoro-timer-with-stretch-breaks.html

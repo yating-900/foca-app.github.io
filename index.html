@@ -35,155 +35,186 @@
     gtag('config', 'G-53X1JLJD83');
   </script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://foca.work/#organization",
-        "name": "Foca Studio",
-        "url": "https://foca.work/",
-        "logo": "https://foca.work/images/icon-foca.png",
-        "email": "foca-2020@outlook.com",
-        "founder": {
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://foca.work/#organization",
+      "name": "Foca Studio",
+      "url": "https://foca.work/",
+      "logo": "https://foca.work/images/icon-foca.png",
+      "email": "foca-2020@outlook.com",
+      "founder": [
+        {
           "@type": "Person",
           "name": "Yating Lu"
         },
-        "sameAs": [
-          "https://apps.apple.com/us/developer/yating-lu/id1526204219"
-        ]
+        {
+          "@type": "Person",
+          "name": "Raphael"
+        }
+      ],
+      "sameAs": [
+        "https://apps.apple.com/us/developer/yating-lu/id1526204219"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://foca.work/#website",
+      "url": "https://foca.work/",
+      "name": "Foca Studio",
+      "description": "Foca Studio builds indie apps: Foca (Pomodoro focus timer for iPhone, Mac, and Android), Dayfold (countdown widgets), and Core (interval & HIIT timer). Ad-free. Made by Yating Lu.",
+      "publisher": {
+        "@id": "https://foca.work/#organization"
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://foca.work/#website",
-        "url": "https://foca.work/",
-        "name": "Foca Studio",
-        "description": "Foca Studio builds indie apps: Foca (Pomodoro focus timer for iPhone, Mac, and Android), Dayfold (countdown widgets), and Core (interval & HIIT timer). Ad-free. Made by Yating Lu.",
-        "publisher": { "@id": "https://foca.work/#organization" },
-        "hasPart": [
-          { "@type": "WebPage", "name": "Foca Studio", "url": "https://foca.work/" },
-          { "@type": "WebPage", "name": "Dayfold", "url": "https://foca.work/dayfold.html" },
-          { "@type": "WebPage", "name": "Core", "url": "https://foca.work/core.html" },
-          { "@type": "WebPage", "name": "Help", "url": "https://foca.work/faq.html" }
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Foca",
-        "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "iOS, macOS, Android",
-        "url": "https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217",
-        "downloadUrl": "https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217",
-        "description": "Foca is a minimalist Pomodoro focus timer for iPhone, Mac, and Android. It combines customizable focus sessions, calming ambient sounds, guided stretch breaks, Auto-Run mode, and focus statistics — without ads.",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
+      "hasPart": [
+        {
+          "@type": "WebPage",
+          "name": "Foca Studio",
+          "url": "https://foca.work/"
         },
-        "author": { "@id": "https://foca.work/#organization" }
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Dayfold",
-        "applicationCategory": "LifestyleApplication",
-        "operatingSystem": "iOS",
-        "url": "https://apps.apple.com/us/app/dayfold-countdown-widgets/id6802240198",
-        "downloadUrl": "https://apps.apple.com/us/app/dayfold-countdown-widgets/id6802240198",
-        "description": "Dayfold turns meaningful dates into countdown and anniversary cards with Home Screen and Lock Screen widgets, optional reminders, and yearly repeats for birthdays and anniversaries.",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
+        {
+          "@type": "WebPage",
+          "name": "Dayfold",
+          "url": "https://foca.work/dayfold.html"
         },
-        "author": { "@id": "https://foca.work/#organization" }
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Core",
-        "applicationCategory": "HealthApplication",
-        "operatingSystem": "iOS",
-        "url": "https://apps.apple.com/us/app/core-interval-hiit-timer/id1562215374",
-        "downloadUrl": "https://apps.apple.com/us/app/core-interval-hiit-timer/id1562215374",
-        "description": "Core is an interval and HIIT workout timer. Set work, rest, and rounds for Tabata, boxing, circuits, and similar training, with audio cues and workout history.",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
+        {
+          "@type": "WebPage",
+          "name": "Core",
+          "url": "https://foca.work/core.html"
         },
-        "author": { "@id": "https://foca.work/#organization" }
+        {
+          "@type": "WebPage",
+          "name": "Help",
+          "url": "https://foca.work/faq.html"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Foca",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "iOS, macOS, Android",
+      "url": "https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217",
+      "downloadUrl": "https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217",
+      "description": "Foca is a minimalist Pomodoro focus timer for iPhone, Mac, and Android. It combines customizable focus sessions, calming ambient sounds, guided stretch breaks, Auto-Run mode, and focus statistics — without ads.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
       },
-      {
-        "@type": "FAQPage",
-        "@id": "https://foca.work/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Foca Studio?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Foca Studio is an indie app studio founded by Yating Lu. It builds simple, ad-free apps for focus, meaningful dates, and workouts — starting with Foca, Dayfold, and Core."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Foca?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Foca is a minimalist Pomodoro focus timer for iPhone, Mac, and Android. It combines customizable focus sessions, calming ambient sounds, guided stretch breaks, Auto-Run mode, and focus statistics — without ads."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How is Foca different from a basic Pomodoro timer?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Beyond a countdown, Foca adds ambient sounds, guided stretch breaks during rests, Auto-Run so sessions continue without tapping back, custom focus categories, and weekly statistics so you see where your time went."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does Foca include stretch breaks?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. When a focus session ends, you can follow guided stretches for neck, shoulders, back, hands, legs, or full body, with illustrations and voice guidance."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is Foca available on iPhone, Mac, and Android?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Foca is available for iPhone and Mac on the App Store, and for Android on Google Play. Dayfold and Core are available for iPhone."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Dayfold?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Dayfold turns meaningful dates into countdown and anniversary cards with Home Screen and Lock Screen widgets, optional reminders, and yearly repeats for birthdays and anniversaries."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Core?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Core is an interval and HIIT workout timer. Set work, rest, and rounds for Tabata, boxing, circuits, and similar training, with audio cues and workout history."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Are Foca Studio apps ad-free? Do you collect my data?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Foca is ad-free. Dayfold stores moment content locally on your device and does not require an account. Check each app’s App Store privacy label for the latest practices. Optional Pro / Plus unlocks are in-app purchases."
-            }
-          }
-        ]
+      "author": {
+        "@id": "https://foca.work/#organization"
+      },
+      "@id": "https://foca.work/#foca-app"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Dayfold",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "iOS",
+      "url": "https://apps.apple.com/us/app/dayfold-countdown-widgets/id6802240198",
+      "downloadUrl": "https://apps.apple.com/us/app/dayfold-countdown-widgets/id6802240198",
+      "description": "Dayfold turns meaningful dates into countdown and anniversary cards with Home Screen and Lock Screen widgets, optional reminders, and yearly repeats for birthdays and anniversaries.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@id": "https://foca.work/#organization"
       }
-    ]
-  }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Core",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS",
+      "url": "https://apps.apple.com/us/app/core-interval-hiit-timer/id1562215374",
+      "downloadUrl": "https://apps.apple.com/us/app/core-interval-hiit-timer/id1562215374",
+      "description": "Core is an interval and HIIT workout timer. Set work, rest, and rounds for Tabata, boxing, circuits, and similar training, with audio cues and workout history.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@id": "https://foca.work/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://foca.work/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Foca Studio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Foca Studio is an indie app studio founded by Yating Lu. It builds simple, ad-free apps for focus, meaningful dates, and workouts — starting with Foca, Dayfold, and Core."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Foca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Foca is a minimalist Pomodoro focus timer for iPhone, Mac, and Android. It combines customizable focus sessions, calming ambient sounds, guided stretch breaks, Auto-Run mode, and focus statistics — without ads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is Foca different from a basic Pomodoro timer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Beyond a countdown, Foca adds ambient sounds, guided stretch breaks during rests, Auto-Run so sessions continue without tapping back, custom focus categories, and weekly statistics so you see where your time went."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Foca include stretch breaks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. When a focus session ends, you can follow guided stretches for neck, shoulders, back, hands, legs, or full body, with illustrations and voice guidance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Foca available on iPhone, Mac, and Android?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Foca is available for iPhone and Mac on the App Store, and for Android on Google Play. Dayfold and Core are available for iPhone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Dayfold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dayfold turns meaningful dates into countdown and anniversary cards with Home Screen and Lock Screen widgets, optional reminders, and yearly repeats for birthdays and anniversaries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Core?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Core is an interval and HIIT workout timer. Set work, rest, and rounds for Tabata, boxing, circuits, and similar training, with audio cues and workout history."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Foca Studio apps ad-free? Do you collect my data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Foca is ad-free. Dayfold stores moment content locally on your device and does not require an account. Check each app’s App Store privacy label for the latest practices. Optional Pro / Plus unlocks are in-app purchases."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -257,6 +288,7 @@
           <p class="eyebrow">02 · Break</p>
           <h2>Breaks you actually take.</h2>
           <p>When a session ends, Foca walks you through a short stretch for your neck, shoulders, back, hands or legs — with illustrations and voice guidance.</p>
+          <p><a href="guides/pomodoro-timer-with-stretch-breaks.html">How stretch breaks work in Foca →</a></p>
         </div>
       </div>
 
