@@ -210,40 +210,27 @@
         <h1 class="rise d1">Focus that feels calm.<br><em>Breaks that move you.</em></h1>
         <p class="lead rise d2">A minimalist focus timer with guided stretch breaks, ambient sounds and simple stats. Loved by over 240,000 people since 2020.</p>
         <div class="downloads" data-downloads>
-          <a class="dl primary" data-platform="mac" data-campaign="web_home_hero_mac" href="https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217?platform=mac">
-            <small>Download for</small><strong>Mac</strong>
+          <a class="badge" data-platform="mac" data-campaign="web_home_hero_mac" href="https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217?platform=mac">
+            <img src="images/mac-app.svg" alt="Download on the Mac App Store" width="156" height="40">
           </a>
-          <a class="dl" data-platform="iphone" data-campaign="web_home_hero_iphone" href="https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217?platform=iphone">
-            <small>Download on the App Store</small><strong>iPhone</strong>
+          <a class="badge" data-platform="iphone" data-campaign="web_home_hero_iphone" href="https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217?platform=iphone">
+            <img src="images/app-store.svg" alt="Download on the App Store" width="120" height="40">
           </a>
-          <a class="dl" data-platform="android" data-campaign="web_home_hero_android" href="https://play.google.com/store/apps/details?id=com.pomodoro.foca&amp;referrer=utm_source%3Dfoca.work%26utm_medium%3Dwebsite%26utm_campaign%3Dhome_hero">
-            <small>Get it on Google Play</small><strong>Android</strong>
+          <a class="badge" data-platform="android" data-campaign="web_home_hero_android" href="https://play.google.com/store/apps/details?id=com.pomodoro.foca&amp;referrer=utm_source%3Dfoca.work%26utm_medium%3Dwebsite%26utm_campaign%3Dhome_hero">
+            <img src="images/google-play.svg" alt="Get it on Google Play" width="135" height="40">
           </a>
         </div>
         <p class="faint">Free to download · No ads · Foca Plus optional</p>
       </div>
 
-      <div class="ring-wrap" aria-hidden="true">
-        <div class="ring">
-          <div class="glow"></div>
-          <svg viewBox="0 0 300 300">
-            <circle cx="150" cy="150" r="118" fill="none" stroke="#24221F" stroke-width="6"/>
-            <circle data-arc cx="150" cy="150" r="118" fill="none" stroke="#F4C59B" stroke-width="6" stroke-linecap="round" stroke-dasharray="741" stroke-dashoffset="0" transform="rotate(-90 150 150)"/>
-            <g class="orbit"><circle cx="150" cy="32" r="7" fill="#F4C59B"/></g>
-          </svg>
-          <div class="ring-face">
-            <span class="faint">1/4 · Focusing</span>
-            <span class="clock" data-clock>25:00</span>
-            <span style="color: var(--accent); font-size: 14px">● Work</span>
-          </div>
-        </div>
+      <div class="hero-media">
+        <img src="images/foca-dual-mac-iphone.webp" alt="Foca running on a Mac and an iPhone" width="1080" height="1080" fetchpriority="high">
       </div>
     </section>
 
-    <!-- Set data-video="images/foca-video.mp4" and data-poster="images/foca-video-poster.webp" once the video is ready; the play button appears automatically. -->
-    <div class="wrap">
-      <div class="showcase reveal" data-video="" data-poster="">
-        <img src="images/foca-dual-mac-iphone.webp" alt="Foca running on a Mac and an iPhone" width="1080" height="1080">
+    <!-- Video slot: set data-video="images/foca-video.mp4" (and data-poster) once the video is ready; the section and play button then appear automatically. -->
+    <div class="wrap" data-video-wrap hidden>
+      <div class="showcase" data-video="" data-poster="">
         <button class="play" type="button" hidden>
           <span><svg width="14" height="14" viewBox="0 0 24 24" fill="#1A1208" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span>
           Watch Foca in 30 seconds

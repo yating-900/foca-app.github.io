@@ -28,27 +28,10 @@
     var isIPadOS = navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
     var platform = /android/.test(ua) ? "android" : (/iphone|ipad|ipod/.test(ua) || isIPadOS) ? "iphone" : "mac";
     var first = box.querySelector('[data-platform="' + platform + '"]');
-    if (first) {
-      box.querySelectorAll(".dl").forEach(function (el) { el.classList.remove("primary"); });
-      first.classList.add("primary");
-      box.insertBefore(first, box.firstChild);
-    }
+    if (first) box.insertBefore(first, box.firstChild);
   }
 
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  // Hero focus ring: a real 25-minute countdown.
-  var clock = document.querySelector("[data-clock]");
-  var arc = document.querySelector("[data-arc]");
-  if (clock && arc) {
-    var total = 1500, secs = total, len = 741;
-    var render = function () {
-      clock.textContent = String(Math.floor(secs / 60)).padStart(2, "0") + ":" + String(secs % 60).padStart(2, "0");
-      arc.setAttribute("stroke-dashoffset", String(len * (1 - secs / total)));
-    };
-    render();
-    if (!reduce) setInterval(function () { secs = secs > 0 ? secs - 1 : total; render(); }, 1000);
-  }
 
   // Scroll reveal.
   var items = document.querySelectorAll(".reveal");
@@ -69,6 +52,8 @@
     var src = showcase.getAttribute("data-video");
     var btn = showcase.querySelector(".play");
     if (src && btn) {
+      var wrapEl = document.querySelector("[data-video-wrap]");
+      if (wrapEl) wrapEl.hidden = false;
       btn.hidden = false;
       btn.addEventListener("click", function () {
         var v = document.createElement("video");
