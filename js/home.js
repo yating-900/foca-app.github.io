@@ -35,7 +35,11 @@
     var isIPadOS = navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
     var platform = /android/.test(ua) ? "android" : (/iphone|ipad|ipod/.test(ua) || isIPadOS) ? "iphone" : "mac";
     var first = box.querySelector('[data-platform="' + platform + '"]');
-    if (first) box.insertBefore(first, box.firstChild);
+    if (first) {
+      var row = first.parentNode;
+      row.insertBefore(first, row.firstChild);
+      if (row !== box.firstElementChild) box.insertBefore(row, box.firstElementChild);
+    }
   }
 
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
