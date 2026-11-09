@@ -415,3 +415,21 @@ video.shot { display: block; background: #f6f4ef; }
   .app-media { padding: 28px; }
   .apps.stack .app-shot { width: 200px; }
 }
+
+/* Stacked hero: copy above, devices below, fits one screen */
+.hero-stack { min-height: calc(100svh - 88px); display: flex; flex-direction: column; align-items: center; padding-top: clamp(16px, 4vh, 48px); overflow: hidden; }
+.stack-copy { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.stack-copy h1 { font-size: clamp(38px, 4.6vw, 62px); line-height: 1.05; }
+.stack-copy h1 em { font-style: italic; color: var(--accent); }
+.stack-copy .lead { margin: 0 auto; }
+.stack-copy .downloads-stack { align-items: center; }
+.stack-copy .downloads { justify-content: center; }
+.stack-media { width: 100%; display: flex; justify-content: center; align-items: flex-end; margin-top: clamp(16px, 3vh, 40px); }
+.stack-media img { width: 100%; max-width: min(1100px, 94vw); height: auto; }
+@media (min-width: 561px) {
+  .hero-stack { height: calc(100svh - 88px); min-height: 640px; }
+  .stack-media { flex: 1 1 0; min-height: 260px; }
+  .stack-media img { width: auto; height: 100%; object-fit: contain; object-position: center bottom; }
+}
+@media (max-width: 560px) { .hero-stack { padding-bottom: 24px; } }
+@media (max-width: 560px) { .hero-stack { min-height: calc(100svh - 64px); justify-content: space-between; } }
