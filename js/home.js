@@ -40,6 +40,18 @@
 
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // Carousel arrows.
+  var track = document.querySelector("[data-carousel]");
+  if (track) {
+    document.querySelectorAll("[data-scroll]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var card = track.querySelector(".card");
+        var step = card ? card.getBoundingClientRect().width + 16 : 316;
+        track.scrollBy({ left: step * Number(btn.getAttribute("data-scroll")), behavior: reduce ? "auto" : "smooth" });
+      });
+    });
+  }
+
   // Scroll reveal.
   var items = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && !reduce) {
