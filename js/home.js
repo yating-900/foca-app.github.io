@@ -1,6 +1,13 @@
 (function () {
   document.documentElement.classList.add("js");
 
+  // Always open a page at the top unless a #section was requested. (Some embedded
+  // previews keep the previous scroll position when you follow a link.)
+  if (!location.hash) {
+    window.scrollTo(0, 0);
+    try { document.body.scrollIntoView({ block: "start" }); } catch (e) {}
+  }
+
   // App Store Connect campaign attribution. Fill in your provider token (App Store Connect →
   // App Analytics → Sources → Campaigns → "Generate a Campaign Link") to see website downloads.
   var PROVIDER_TOKEN = "";
