@@ -24,4 +24,5 @@
 - Help / FAQ: https://foca.work/faq.html
 
 ## Guides
+- Guides: https://foca.work/guides/
 - Pomodoro timer with guided stretch breaks: https://foca.work/guides/pomodoro-timer-with-stretch-breaks.html
