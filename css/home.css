@@ -292,3 +292,9 @@ video.shot { display: block; background: #f6f4ef; }
   .brand { font-size: 17px; }
   .nav-links { gap: 10px; font-size: 14px; }
 }
+
+.app-card.foca { background: #161615; color: var(--ink); border: 1px solid #2a2926; }
+.app-card.foca .tag { color: var(--faint); }
+.app-card.foca p { color: var(--muted); }
+.app-card.foca .go { color: var(--accent); }
+.plan ul { margin-top: 0; }
