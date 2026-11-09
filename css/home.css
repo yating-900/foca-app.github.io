@@ -433,3 +433,5 @@ video.shot { display: block; background: #f6f4ef; }
 }
 @media (max-width: 560px) { .hero-stack { padding-bottom: 24px; } }
 @media (max-width: 560px) { .hero-stack { min-height: calc(100svh - 64px); justify-content: space-between; } }
+.stack-copy .lead { max-width: 600px; text-wrap: balance; }
+@media (max-width: 560px) { .hero-stack { justify-content: center; gap: 8px; } .stack-media { margin-top: 28px; } }
