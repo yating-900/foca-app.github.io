@@ -58,8 +58,7 @@ p { margin: 0; }
 
 /* Header */
 .nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-block: 22px; }
-.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 600; font-size: 17px; }
-.brand img { width: 32px; height: 32px; border-radius: 8px; }
+.brand { color: var(--ink); font-family: var(--serif); font-weight: 500; font-size: 22px; letter-spacing: -0.01em; }
 .nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(14px, 3vw, 28px); font-size: 15px; }
 .nav-links a { color: var(--muted); }
 .nav-links a:hover { color: var(--ink); }
