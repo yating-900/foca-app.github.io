@@ -459,3 +459,6 @@ video.shot { display: block; background: #f6f4ef; }
   .guide-card-media img { height: 260px; }
   .guide-card-copy { padding: 24px; }
 }
+
+/* Social proof under download badges */
+.proof { margin: 0; font-size: 14px; color: var(--muted); letter-spacing: 0.01em; }
