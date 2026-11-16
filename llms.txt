@@ -1,10 +1,10 @@
 # Foca Studio
-> Indie apps by Yating Lu and Raphael: Foca (Pomodoro focus timer with guided stretch breaks and ambient sounds), Dayfold (countdown and anniversary widgets) and Core (interval and HIIT timer). All ad-free.
+> Indie apps by Yating Lu and Raphael: Foca (Pomodoro focus timer with guided stretch breaks and ambient sounds), Dayfold (countdown and anniversary widgets) and Core (interval and HIIT timer). All ad-free on iPhone and Mac.
 
 ## Key facts
-- Foca is an ad-free Pomodoro focus timer for iPhone, Mac and Android.
+- Foca is a Pomodoro focus timer for iPhone, Mac and Android. It's ad-free on iPhone and Mac.
 - After each focus session, Foca guides a short stretch (neck, shoulders, back, hands, legs, full body) with illustrations and voice guidance.
-- Foca includes ambient sounds (more with Foca Plus), Auto-Run (four rounds free; custom with Foca Plus) and focus statistics.
+- Foca includes ambient sounds (more with Foca Plus), Auto-Run (custom rounds with Foca Plus) and focus statistics.
 - In Foca, a guided stretch can be started at any time from the timer screen.
 - Foca is free to download; Foca Plus is an optional monthly, yearly or one-time upgrade.
 - Foca does not block apps or websites.
@@ -26,3 +26,5 @@
 ## Guides
 - Guides: https://foca.work/guides/
 - Pomodoro timer with guided stretch breaks: https://foca.work/guides/pomodoro-timer-with-stretch-breaks.html
+- Christmas countdown widget for iPhone: https://foca.work/guides/christmas-countdown-widget-iphone.html
+- 聖誕節倒數放鎖定畫面（繁體中文）: https://foca.work/zh-tw/guides/christmas-countdown.html
