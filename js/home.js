@@ -17,15 +17,12 @@
   }
 
   // Tag App Store links with a campaign so downloads from foca.work are attributable.
+  // Download clicks themselves are tracked in js/track-store.js (store_click).
   Array.prototype.forEach.call(document.querySelectorAll("a[data-campaign]"), function (a) {
     var href = a.getAttribute("href");
-    if (href.indexOf("apps.apple.com") !== -1 && PROVIDER_TOKEN) {
-      href += (href.indexOf("?") === -1 ? "?" : "&") + "pt=" + PROVIDER_TOKEN + "&ct=" + a.dataset.campaign + "&mt=" + (a.dataset.platform === "mac" ? "12" : "8");
-      a.setAttribute("href", href);
-    }
-    a.addEventListener("click", function () {
-      track("store_click", { campaign: a.dataset.campaign, platform: a.dataset.platform || "" });
-    });
+    if (!href || href.indexOf("apps.apple.com") === -1 || !PROVIDER_TOKEN) return;
+    href += (href.indexOf("?") === -1 ? "?" : "&") + "pt=" + PROVIDER_TOKEN + "&ct=" + a.dataset.campaign + "&mt=" + (a.dataset.platform === "mac" ? "12" : "8");
+    a.setAttribute("href", href);
   });
 
   // Put the visitor's own platform first and make it the primary button.

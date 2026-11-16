@@ -313,7 +313,15 @@ video.shot { display: block; background: #f6f4ef; }
 .prose-block h2:first-child { margin-top: 0; }
 .prose-block p, .prose-block li { color: var(--muted); font-size: 17px; line-height: 1.7; }
 .prose-block li strong { color: var(--ink); }
-.prose-block ul { padding-left: 20px; }
+.prose-block ul, .prose-block ol { padding-left: 22px; margin: 0 0 16px; }
+.prose-block li { margin-bottom: 8px; }
+.prose-block table, .prose table { width: 100%; border-collapse: collapse; margin: 8px 0 20px; font-size: 16px; }
+.prose-block th, .prose-block td, .prose th, .prose td { text-align: left; vertical-align: top; padding: 12px 16px 12px 0; border-bottom: 1px solid var(--line); }
+.prose-block th, .prose th { color: var(--ink); font-weight: 600; }
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 8px 0 20px; }
+.table-scroll table { margin: 0; }
+.table-scroll.wide table { min-width: 560px; }
+.guide-hero .lead strong { color: var(--ink); }
 .guide-wide { width: 100%; max-width: 520px; margin: 24px 0 0; }
 .guide-cta { background: var(--panel); border-radius: 28px; padding: 36px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
 .guide-cta h2 { font-size: clamp(28px, 3.4vw, 36px); margin-bottom: 6px; }
@@ -450,6 +458,8 @@ video.shot { display: block; background: #f6f4ef; }
 .guide-card:hover { transform: translateY(-3px); }
 .guide-card-media { background: #26303f; display: flex; align-items: center; justify-content: center; padding: 28px; }
 .guide-card-media img { width: auto; height: 300px; border-radius: 22px; display: block; }
+.guide-card-media.icon { min-height: 220px; }
+.guide-card-media.icon img { width: 128px; height: 128px; border-radius: 28px; }
 .guide-card-copy { display: flex; flex-direction: column; gap: 12px; padding: 36px; justify-content: center; }
 .guide-card-copy strong { font-family: var(--serif); font-weight: 500; font-size: clamp(26px, 3vw, 34px); line-height: 1.15; }
 .guide-card-copy > span:not(.faint):not(.go) { color: var(--muted); max-width: 520px; }
