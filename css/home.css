@@ -472,15 +472,26 @@ video.shot { display: block; background: #f6f4ef; }
 
 /* Black Friday & Cyber Monday 2026 preview (index.html#black-friday-2026, strip on app pages) */
 #black-friday-2026 { scroll-margin-top: 24px; }
-.campaign { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px 48px; background: var(--panel); border: 1px solid var(--line); border-radius: 28px; padding: clamp(26px, 4vw, 44px); }
-.campaign-copy { flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
-.campaign h2 { font-size: clamp(28px, 3.2vw, 38px); line-height: 1.12; text-wrap: balance; }
-.campaign-copy p:not(.eyebrow):not(.faint) { color: var(--muted); max-width: 640px; }
-.campaign-links { flex: 0 1 280px; display: flex; flex-direction: column; gap: 10px; }
-.campaign-link { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; padding: 12px 18px; border: 1px solid #3a3936; border-radius: 14px; color: var(--ink); font-weight: 600; font-size: 15px; }
-.campaign-link::after { content: "→"; color: var(--accent); }
-.campaign-link:hover { color: var(--ink); border-color: var(--accent); }
+.campaign { position: relative; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 56px;
+            background: radial-gradient(circle at 12% 0%, #2a2016 0%, var(--panel) 58%); border: 1px solid rgba(244,197,155,.22); border-radius: 28px; padding: clamp(28px, 4.5vw, 52px); }
+.campaign-copy { flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.campaign h2 { font-size: clamp(34px, 4.2vw, 52px); line-height: 1.06; }
+.campaign h2 em { display: block; font-style: italic; color: var(--accent); }
+.campaign-kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.campaign-tag { background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 14px; letter-spacing: .02em; padding: 6px 14px; border-radius: 999px; }
+.campaign-lead { font-size: 18px; color: var(--muted); max-width: 600px; }
+.campaign-lead strong { color: var(--ink); font-weight: 600; }
+.campaign-apps { list-style: none; margin: 0; padding: 0; flex: 0 1 340px; display: flex; flex-direction: column; gap: 10px; }
+.campaign-app { display: flex; align-items: center; gap: 14px; padding: 12px 16px 12px 12px; border-radius: 18px; background: rgba(11,11,12,.55); border: 1px solid var(--line); color: var(--ink); transition: border-color .2s ease, transform .2s ease; }
+.campaign-app:hover { color: var(--ink); border-color: rgba(244,197,155,.6); transform: translateY(-2px); }
+.campaign-app img { width: 48px; height: 48px; border-radius: 12px; flex: none; }
+.campaign-app > span:not(.campaign-go) { flex: 1; display: flex; flex-direction: column; line-height: 1.25; }
+.campaign-app strong { font-size: 17px; }
+.campaign-app > span > span { font-size: 14px; color: var(--faint); }
+.campaign-go { font-size: 14px; font-weight: 600; color: var(--accent); white-space: nowrap; }
+.campaign-go::after { content: " →"; }
 .campaign-strip { margin-top: 4px; }
-.campaign-strip p { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 14px 20px; font-size: 15px; line-height: 1.5; color: var(--muted); }
+.campaign-strip p { display: flex; align-items: flex-start; gap: 14px; background: radial-gradient(circle at 0% 50%, #2a2016 0%, var(--panel) 45%); border: 1px solid rgba(244,197,155,.22); border-radius: 16px; padding: 14px 20px 14px 14px; font-size: 15px; line-height: 1.5; color: var(--muted); }
 .campaign-strip strong { color: var(--ink); font-weight: 600; }
-@media (max-width: 560px) { .campaign-links { flex-basis: 100%; } }
+.campaign-date { flex: none; background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 13px; letter-spacing: .02em; padding: 4px 10px; border-radius: 999px; margin-top: 1px; white-space: nowrap; }
+@media (max-width: 560px) { .campaign-apps { flex-basis: 100%; } .campaign-lead { font-size: 17px; } .campaign-go { font-size: 0; } .campaign-go::after { content: "→"; font-size: 20px; } }
