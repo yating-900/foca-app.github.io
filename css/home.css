@@ -488,6 +488,9 @@ video.shot { display: block; background: #f6f4ef; }
 .campaign-app > span:not(.campaign-go) { flex: 1; display: flex; flex-direction: column; line-height: 1.25; }
 .campaign-app strong { font-size: 17px; }
 .campaign-app > span > span { font-size: 14px; color: var(--faint); }
+.campaign-app .campaign-price { font-size: 15px; font-weight: 600; color: var(--accent); }
+.campaign-app .campaign-price s { color: var(--faint); font-weight: 400; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .campaign-go { font-size: 14px; font-weight: 600; color: var(--accent); white-space: nowrap; }
 .campaign-go::after { content: " →"; }
 .campaign-strip { margin-top: 4px; }
