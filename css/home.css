@@ -498,3 +498,4 @@ video.shot { display: block; background: #f6f4ef; }
 .campaign-strip strong { color: var(--ink); font-weight: 600; }
 .campaign-date { flex: none; background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 13px; letter-spacing: .02em; padding: 4px 10px; border-radius: 999px; margin-top: 1px; white-space: nowrap; }
 @media (max-width: 560px) { .campaign-apps { flex-basis: 100%; } .campaign-lead { font-size: 17px; } .campaign-go { font-size: 0; } .campaign-go::after { content: "→"; font-size: 20px; } }
+.campaign-strip s { color: var(--faint); }
