@@ -28,3 +28,8 @@
 - Pomodoro timer with guided stretch breaks: https://foca.work/guides/pomodoro-timer-with-stretch-breaks.html
 - Christmas countdown widget for iPhone: https://foca.work/guides/christmas-countdown-widget-iphone.html
 - 聖誕節倒數放鎖定畫面（繁體中文）: https://foca.work/zh-tw/guides/christmas-countdown.html
+- Baby age widget (days since birth): https://foca.work/guides/baby-age-tracker-widget-iphone.html
+- Couple days together and anniversary widget: https://foca.work/guides/couple-days-together-anniversary-widget-iphone.html
+- Exam countdown widget for iPhone: https://foca.work/guides/exam-countdown-widget-iphone.html
+- Wedding or vacation countdown widget: https://foca.work/guides/wedding-vacation-countdown-widget-iphone.html
+- New Year 2027 countdown widget: https://foca.work/guides/new-year-2027-countdown-widget-iphone.html
