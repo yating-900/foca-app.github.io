@@ -326,6 +326,41 @@ video.shot { display: block; background: #f6f4ef; }
 .guide-cta { background: var(--panel); border-radius: 28px; padding: 36px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
 .guide-cta h2 { font-size: clamp(28px, 3.4vw, 36px); margin-bottom: 6px; }
 .guide .wrap { max-width: 860px; }
+
+/* Dayfold scene guides: widget, H1, direct answer and App Store badge above the fold.
+   Mobile order is back link, H1, widget, direct answer, then the badge. */
+.guide .wrap.guide-hero-split { max-width: 1120px; }
+.guide-hero.guide-hero-split {
+  max-width: 1120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px 48px;
+  padding-block: 24px 8px;
+}
+.guide-hero-split .guide-hero-copy { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.guide-hero-split .guide-hero-media { flex: 1 1 260px; display: flex; flex-direction: column; align-items: center; margin: 0; }
+.guide-hero-split .widget-art { width: min(100%, 360px); max-width: 360px; min-width: 0; height: auto; border-radius: 28px; }
+.guide-hero-caption { margin: 8px 0 0; font-size: 13px; color: var(--faint); text-align: center; max-width: 360px; }
+.guide-hero.guide-hero-split h1 { font-size: clamp(32px, 3.5vw, 52px); line-height: 1.08; }
+.guide-hero-split .lead { max-width: 40em; font-size: 17px; line-height: 1.5; }
+.guide-hero-split .downloads { margin-top: 0; }
+.prose-block figure { margin: 20px 0 28px; }
+.prose-block figure .shot { width: min(260px, 100%); }
+.prose-block figcaption.guide-hero-caption { text-align: left; max-width: 40em; }
+@media (max-width: 700px) {
+  .guide-hero.guide-hero-split { flex-direction: column; align-items: stretch; gap: 10px; padding-block: 4px 0; }
+  .guide-hero-split .guide-hero-copy { display: contents; }
+  .guide-hero-split .guide-hero-media { display: contents; }
+  .guide-hero-split .back { order: 1; margin-top: 0; padding-block: 2px; }
+  .guide-hero-split h1 { order: 2; font-size: 28px; line-height: 1.12; }
+  .guide-hero-split .widget-art { order: 3; width: min(100%, 156px); align-self: center; }
+  .guide-hero-split .guide-hero-caption { order: 4; max-width: none; text-align: left; font-size: 12px; line-height: 1.35; }
+  .guide-hero-split .lead { order: 5; font-size: 14.5px; line-height: 1.38; }
+  .guide-hero-split .downloads { order: 6; }
+  .guide-hero-split .byline { order: 7; }
+}
 @media (max-width: 560px) { .steps .shot { max-width: 200px; } }
 
 .glance { background: var(--panel); border-radius: 24px; padding: 28px 32px; }
