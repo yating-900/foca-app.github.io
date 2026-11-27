@@ -35,3 +35,5 @@
 - Exam countdown widget for iPhone: https://foca.work/guides/exam-countdown-widget-iphone.html
 - Wedding or vacation countdown widget: https://foca.work/guides/wedding-vacation-countdown-widget-iphone.html
 - New Year 2027 countdown widget: https://foca.work/guides/new-year-2027-countdown-widget-iphone.html
+- iPhone Lock Screen countdown widget: https://foca.work/guides/iphone-countdown-widget-lock-screen.html
+- Birthday countdown widget for iPhone: https://foca.work/guides/birthday-countdown-widget-iphone.html
