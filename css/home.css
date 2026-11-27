@@ -340,9 +340,9 @@ video.shot { display: block; background: #f6f4ef; }
   padding-block: 24px 8px;
 }
 .guide-hero-split .guide-hero-copy { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
-.guide-hero-split .guide-hero-media { flex: 1 1 260px; display: flex; flex-direction: column; align-items: center; margin: 0; }
-.guide-hero-split .widget-art { width: min(100%, 360px); max-width: 360px; min-width: 0; height: auto; border-radius: 28px; }
-.guide-hero-caption { margin: 8px 0 0; font-size: 13px; color: var(--faint); text-align: center; max-width: 360px; }
+.guide-hero-split .guide-hero-media { flex: 0 1 280px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0; }
+.guide-hero-split .widget-art { width: min(100%, 270px); max-width: 280px; min-width: 0; height: auto; border-radius: 36px; }
+.guide-hero-caption { margin: 8px 0 0; font-size: 13px; color: var(--faint); text-align: center; max-width: 280px; }
 .guide-hero.guide-hero-split h1 { font-size: clamp(32px, 3.5vw, 52px); line-height: 1.08; }
 .guide-hero-split .lead { max-width: 40em; font-size: 17px; line-height: 1.5; }
 .guide-hero-split .downloads { margin-top: 0; }
@@ -355,7 +355,7 @@ video.shot { display: block; background: #f6f4ef; }
   .guide-hero-split .guide-hero-media { display: contents; }
   .guide-hero-split .back { order: 1; margin-top: 0; padding-block: 2px; }
   .guide-hero-split h1 { order: 2; font-size: 28px; line-height: 1.12; }
-  .guide-hero-split .widget-art { order: 3; width: min(100%, 156px); align-self: center; }
+  .guide-hero-split .widget-art { order: 3; width: min(70%, 248px); max-width: 260px; height: auto; border-radius: 32px; align-self: center; }
   .guide-hero-split .guide-hero-caption { order: 4; max-width: none; text-align: left; font-size: 12px; line-height: 1.35; }
   .guide-hero-split .lead { order: 5; font-size: 14.5px; line-height: 1.38; }
   .guide-hero-split .downloads { order: 6; }
