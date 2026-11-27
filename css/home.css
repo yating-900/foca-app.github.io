@@ -361,6 +361,9 @@ video.shot { display: block; background: #f6f4ef; }
   .guide-hero-split .downloads { order: 6; }
   .guide-hero-split .byline { order: 7; }
 }
+@media (max-width: 700px) {
+  .guide-hero-split .widget-art { width: min(58%, 210px); max-width: 220px; }
+}
 @media (max-width: 560px) { .steps .shot { max-width: 200px; } }
 
 .glance { background: var(--panel); border-radius: 24px; padding: 28px 32px; }
