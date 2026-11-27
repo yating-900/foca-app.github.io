@@ -529,7 +529,7 @@ video.shot { display: block; background: #f6f4ef; }
   .guide-card-copy { padding: 24px; }
 }
 
-/* Black Friday & Cyber Monday 2026 preview (index.html#black-friday-2026, strip on app pages) */
+/* Black Friday & Cyber Monday 2026, live Nov 27–Dec 1 (index.html#black-friday-2026, strip on app pages) */
 #black-friday-2026 { scroll-margin-top: 24px; }
 .campaign { position: relative; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 56px;
             background: radial-gradient(circle at 12% 0%, #2a2016 0%, var(--panel) 58%); border: 1px solid rgba(244,197,155,.22); border-radius: 28px; padding: clamp(28px, 4.5vw, 52px); }
