@@ -273,9 +273,9 @@ video.shot { display: block; background: #f6f4ef; }
   .nav { padding-block: 12px; gap: 8px; }
   .nav-links { gap: 4px 14px; }
   .nav-links a:not(.pill) { padding: 12px 2px; }
-  .nav { flex-wrap: nowrap; }
+  .nav { flex-wrap: wrap; row-gap: 0; }
   .brand { font-size: 19px; white-space: nowrap; }
-  .nav-links { flex-wrap: nowrap; gap: 14px; }
+  .nav-links { flex-wrap: nowrap; gap: 14px; width: 100%; justify-content: space-between; }
   .nav-links .pill { display: none; }
   .hero { gap: 16px; padding-block: 24px 32px; }
   .hero-media img { max-width: 360px; }
