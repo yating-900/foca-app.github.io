@@ -491,6 +491,7 @@ video.shot { display: block; background: #f6f4ef; }
 .guides-index h1 { font-size: clamp(40px, 5vw, 64px); margin-bottom: 12px; }
 .guide-list { display: grid; gap: 20px; margin-top: 40px; }
 .guide-card { display: grid; grid-template-columns: minmax(200px, 300px) 1fr; border-radius: 28px; overflow: hidden; background: #151515; color: var(--ink); transition: transform .25s ease; }
+.guide-card.guide-card-text { grid-template-columns: 1fr; }
 .guide-card:hover { transform: translateY(-3px); }
 .guide-card-media { background: #26303f; display: flex; align-items: center; justify-content: center; padding: 28px; }
 .guide-card-media img { width: auto; height: 300px; border-radius: 22px; display: block; }
