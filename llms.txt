@@ -23,6 +23,7 @@
 - Dayfold: https://foca.work/dayfold.html
 - Core: https://foca.work/core.html
 - Tenderday (PMDD & PMS tracker, coming soon): https://foca.work/tenderday.html
+- Free PMDD self-check (3 questions based on DSM-5 criteria; private, not a diagnosis): https://foca.work/pmdd-self-check.html
 - Help / FAQ: https://foca.work/faq.html
 
 ## Guides
