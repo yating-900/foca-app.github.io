@@ -10,7 +10,7 @@
 - Foca does not block apps or websites.
 - Dayfold turns important dates into countdown and anniversary cards with Home Screen and Lock Screen widgets. Free for 4 active moments; Dayfold Pro is optional.
 - Core is an interval timer for HIIT, Tabata, circuits and boxing, with saved workouts, audio cues and weekly trends. Core Pro adds full history, monthly and yearly trends and CSV export.
-- Tenderday (coming soon, planned December 2026) is a private PMDD and PMS tracker for iPhone: one turn of a dial logs how the day felt, with period days and notes, and a full check-in that rates 11 symptoms and 3 impacts on the 1 to 6 scale clinicians use for PMDD daily records; a calendar and Insights show when harder days come across cycles; a free PDF report gives a doctor two cycles of daily ratings. No account; data stays on the iPhone. It does not diagnose or predict.
+- Tenderday (coming soon, planned December 2026) is a private PMDD and PMS tracker for iPhone: one turn of a dial logs how the day felt, with period days and notes, and a full check-in that rates 13 symptoms and 3 impacts on the 1 to 6 scale clinicians use for PMDD daily records; a calendar and Insights show when harder days come across cycles; a free PDF report gives a doctor two cycles of daily ratings. No account; data stays on the iPhone. It does not diagnose or predict.
 
 ## Apps
 - Foca on the App Store (iPhone and Mac): https://apps.apple.com/us/app/focus-pomodoro-timer-foca/id1526204217
