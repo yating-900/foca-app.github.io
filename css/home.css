@@ -356,13 +356,11 @@ video.shot { display: block; background: #f6f4ef; }
   .guide-hero-split .back { order: 1; margin-top: 0; padding-block: 2px; }
   .guide-hero-split h1 { order: 2; font-size: 28px; line-height: 1.12; }
   .guide-hero-split .widget-art { order: 3; width: min(70%, 248px); max-width: 260px; height: auto; border-radius: 32px; align-self: center; }
+  .guide-hero-compact .widget-art { width: min(58%, 210px); max-width: 220px; }
   .guide-hero-split .guide-hero-caption { order: 4; max-width: none; text-align: left; font-size: 12px; line-height: 1.35; }
   .guide-hero-split .lead { order: 5; font-size: 14.5px; line-height: 1.38; }
   .guide-hero-split .downloads { order: 6; }
   .guide-hero-split .byline { order: 7; }
-}
-@media (max-width: 700px) {
-  .guide-hero-split .widget-art { width: min(58%, 210px); max-width: 220px; }
 }
 @media (max-width: 560px) { .steps .shot { max-width: 200px; } }
 
