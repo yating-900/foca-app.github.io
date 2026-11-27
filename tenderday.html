@@ -51,7 +51,7 @@
         "image": "https://foca.work/images/icon-tenderday.png",
         "description": "A private PMDD and PMS tracker and symptom diary for iPhone: one ring a day for how the day felt, period days, symptoms and notes, a calendar, Insights that show your pattern after two cycles, and a free PDF report for your doctor. It records and describes; it does not diagnose or predict.",
         "keywords": "PMDD tracker, PMS tracker, PMDD app, premenstrual dysphoric disorder, PMDD symptom diary, mood and period tracker, DRSP, doctor report",
-        "featureList": ["One-tap daily mood rating on a dial", "Period days and flow", "Symptoms and notes", "Calendar of day rings", "Cycle pattern insights after two cycles", "Free PDF report for your doctor", "No account; data stays on the iPhone", "Read-only Apple Health period import"],
+        "featureList": ["One-tap daily mood rating on a dial", "Period days and flow", "Full daily symptom log on a 1 to 6 scale (11 symptoms and 3 impacts)", "Symptoms and notes", "Calendar of day rings", "Cycle pattern insights after two cycles", "Free PDF report for your doctor", "No account; data stays on the iPhone", "Read-only Apple Health period import"],
         "author": { "@id": "https://foca.work/#organization" }
       },
       {
@@ -63,6 +63,16 @@
   }
   </script>
   <style>
+    /* Phones: show the calendar right after the headline, before the lead and the form. */
+    @media (max-width: 560px) {
+      .app-hero { gap: 20px; }
+      .app-hero-copy { display: contents; }
+      .app-hero-copy > * { width: 100%; }
+      .app-hero-copy > .soon { width: auto; align-self: flex-start; }
+      .app-hero-media { order: 1; flex-basis: 100%; }
+      .app-hero-media .shot { width: 220px; }
+      .app-hero-copy > .lead, .app-hero-copy > .join { order: 2; }
+    }
     .soon { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: rgba(185,163,232,.14); color: var(--app); font-size: 14px; font-weight: 600; }
     .soon::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #FF3B30; }
     .join { display: flex; flex-direction: column; gap: 10px; max-width: 480px; }
@@ -132,7 +142,7 @@
         </form>
       </div>
       <div class="app-hero-media">
-        <img class="shot" src="images/shot-tenderday-today.webp" alt="Tenderday Today screen: cycle day 3 on a period day, the stove-knob dial set to Hard, and the Flow, Symptoms and Note rows" width="540" height="1174">
+        <img class="shot" src="images/shot-tenderday-calendar.webp" alt="Tenderday calendar for November: a ring for each day, fuller on harder days, red dots on period days, and a note that the harder days came before the period" width="540" height="1169" fetchpriority="high">
       </div>
     </section>
 
@@ -143,17 +153,17 @@
           <h2>Turn the dial. That’s today logged.</h2>
           <p>Great, Good, Okay, Hard or Awful: one turn fills the day’s ring. A fuller ring is a harder day, and a red dot marks a period day. Symptoms and a short note are there when you want them.</p>
         </div>
-        <div class="split-media"><img class="shot" src="images/shot-tenderday-dial.webp" alt="The Tenderday dial before logging: a ceramic knob inside an empty ring, with Great, Good, Okay, Hard and Awful around it" width="540" height="1174" loading="lazy"></div>
+        <div class="split-media"><img class="shot" src="images/shot-tenderday-dial.webp" alt="The Tenderday dial before logging: a ceramic knob inside an empty ring, with Great, Good, Okay, Hard and Awful around it" width="540" height="1169" loading="lazy"></div>
       </div>
     </section>
 
     <section class="wrap section">
       <div class="split flip-split reveal">
-        <div class="split-media"><img class="shot" src="images/shot-tenderday-calendar.webp" alt="Tenderday calendar of day rings for November, with red dots on period days" width="540" height="1174" loading="lazy"></div>
+        <div class="split-media"><img class="shot" src="images/shot-tenderday-today.webp" alt="Tenderday Today screen: cycle day 3 on a period day, the dial set to Hard, and a note that last cycle, days like this eased by day 4" width="540" height="1169" loading="lazy"></div>
         <div>
-          <p class="eyebrow app">Calendar</p>
-          <h2>Every day of the month, at a glance.</h2>
-          <p>Each day keeps its ring, so a month reads like a picture: lighter weeks, heavier weeks, and where your period fell.</p>
+          <p class="eyebrow app">Your day</p>
+          <h2>Period, symptoms and a note, when you want them.</h2>
+          <p>Tap Had flow on period days and a red dot joins the ring. Add symptoms or a short note in a tap. On a hard day, Tenderday shows how days like it went last cycle.</p>
         </div>
       </div>
     </section>
@@ -165,18 +175,29 @@
           <h2>Knowing it’s the week before, not you.</h2>
           <p>After two cycles, Insights lines your days up against your period and shows when the harder days come, and which symptoms rise in the week before. Many people find those days easier to meet once they can see them coming.</p>
         </div>
-        <div class="split-media"><img class="shot" src="images/shot-tenderday-insights.webp" alt="Tenderday Insights: three cycles of rings lined up to the period, showing harder days in the week before, and symptoms that were stronger then" width="540" height="1174" loading="lazy"></div>
+        <div class="split-media"><img class="shot" src="images/shot-tenderday-insights.webp" alt="Tenderday Insights: three cycles of rings lined up to the period, showing harder days in the week before, and symptoms that were stronger then" width="540" height="1169" loading="lazy"></div>
       </div>
     </section>
 
     <section class="wrap section">
       <div class="split flip-split reveal">
-        <div class="split-media"><img class="shot" src="images/shot-tenderday-report.webp" alt="Tenderday Report: a preview of the PDF for your doctor with two cycles of daily ratings, and switches for symptoms and notes" width="540" height="1174" loading="lazy"></div>
+        <div class="split-media"><img class="shot" src="images/shot-tenderday-checkin.webp" alt="Tenderday full check-in: how the day felt, period flow, and symptoms such as low mood, anxiety, irritability and cramps each rated from 1, not at all, to 6, extreme" width="540" height="1169" loading="lazy"></div>
+        <div>
+          <p class="eyebrow app">Full symptom log</p>
+          <h2>A complete daily record, ready for your doctor.</h2>
+          <p>On days you want more than the dial, open the full check-in. Rate 11 mood and body symptoms, from low mood, anxiety and irritability to cramps and sleep, plus what they got in the way of: work, plans and people. Each uses the same 1 to 6 scale as the daily record clinicians use to assess PMDD. Every symptom starts at “not at all”, so a calm day needs no taps.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="split reveal">
         <div>
           <p class="eyebrow app">Report for your doctor</p>
           <h2>Bring two cycles to your appointment.</h2>
           <p>Export a free PDF with two cycles of daily ratings, period days and your top symptoms on one page: the daily record doctors ask for when they assess PMDD. Notes stay out unless you switch them on, and nothing is ever sent for you.</p>
         </div>
+        <div class="split-media"><img class="shot" src="images/shot-tenderday-report.webp" alt="Tenderday Report: a preview of the PDF for your doctor with two cycles of daily ratings, and switches for symptoms and notes" width="540" height="1169" loading="lazy"></div>
       </div>
     </section>
 
@@ -231,7 +252,7 @@
           <p>A calm focus timer with ambient sounds and guided stretch breaks.</p>
           <span class="go">Meet Foca →</span>
           </span>
-          <span class="app-media"><img class="app-shot" src="images/shot-ios-timer.webp" alt="Foca focus timer" width="540" height="1174" loading="lazy"></span>
+          <span class="app-media"><img class="app-shot" src="images/shot-ios-timer.webp" alt="Foca focus timer" width="540" height="1169" loading="lazy"></span>
         </a>
         <a class="app-card dayfold" href="dayfold.html">
           <span class="app-copy">
@@ -243,7 +264,7 @@
           <p>Countdowns and anniversaries as cards on your Home and Lock Screen.</p>
           <span class="go">Meet Dayfold →</span>
           </span>
-          <span class="app-media"><img class="app-shot" src="images/shot-dayfold-moments.webp" alt="Dayfold Moments screen" width="540" height="1174" loading="lazy"></span>
+          <span class="app-media"><img class="app-shot" src="images/shot-dayfold-moments.webp" alt="Dayfold Moments screen" width="540" height="1169" loading="lazy"></span>
         </a>
       </div>
     </section>
