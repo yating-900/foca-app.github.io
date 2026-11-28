@@ -38,3 +38,5 @@
 - New Year 2027 countdown widget: https://foca.work/guides/new-year-2027-countdown-widget-iphone.html
 - iPhone Lock Screen countdown widget: https://foca.work/guides/iphone-countdown-widget-lock-screen.html
 - Birthday countdown widget for iPhone: https://foca.work/guides/birthday-countdown-widget-iphone.html
+- 116 學測倒數放鎖定畫面（繁體中文）: https://foca.work/zh-tw/guides/xuece-countdown.html
+- Tabata timer for iPhone (20/10 × 8) in Core: https://foca.work/guides/tabata-timer-iphone.html
