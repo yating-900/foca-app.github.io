@@ -26,6 +26,37 @@
   <link rel="preload" href="../../fonts/LoraVariable-Italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../../css/home.css">
+
+  <style>
+    /* Page-scoped mobile typography for this guide only. Do not add to home.css. */
+    .guide-hero h1 {
+      word-break: keep-all;
+      overflow-wrap: normal;
+      text-wrap: wrap;
+    }
+    .guide-hero h1 .nowrap {
+      white-space: nowrap;
+    }
+    @media (max-width: 640px) {
+      .facts-stack table,
+      .facts-stack tbody,
+      .facts-stack tr,
+      .facts-stack th,
+      .facts-stack td {
+        display: block;
+        width: 100%;
+      }
+      .facts-stack th {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      .facts-stack td {
+        padding-top: 4px;
+        padding-bottom: 14px;
+      }
+    }
+  </style>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LXV2P92JJ3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -224,7 +255,7 @@
       <header class="wrap guide-hero guide-hero-split">
         <div class="guide-hero-copy">
           <a class="back" href="index.html">← 指南</a>
-          <h1>116 學測倒數：放到 iPhone 鎖定畫面</h1>
+          <h1>116 學測倒數：<span class="nowrap">放到鎖定畫面</span></h1>
           <p class="lead">依大學入學考試中心（大考中心）《116 學年度考試簡章》，116 學年度學科能力測驗（學測）考試日期為 2027 年（民國 116 年）1 月 22 日（星期五）至 1 月 24 日（星期日）。iPhone 沒有內建「倒數到指定日期」的小工具。在 <a href="../../dayfold.html">Dayfold</a> 建立一個日期為 1 月 22 日的倒數（建議以考試第一天為倒數日），再把它加到鎖定畫面或主畫面，天數會每天自動更新。這不是網頁計算器，也不是讀書計時器；目前也沒有經驗證的「學測主題」。</p>
           <div class="downloads">
           <a class="badge" data-app="dayfold" data-platform="iphone" data-campaign="web_xuece_tw_top_iphone" href="https://apps.apple.com/tw/app/dayfold-countdown-widgets/id6802240198">
@@ -240,8 +271,8 @@
       </header>
 
       <section class="wrap section prose-block">
-        <h2>重點摘要</h2>
-        <div class="table-scroll">
+        <h2 id="facts">重點摘要</h2>
+        <div class="table-scroll facts-stack">
           <table>
             <tbody>
             <tr>
